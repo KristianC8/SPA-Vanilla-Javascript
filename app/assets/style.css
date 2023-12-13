@@ -1,0 +1,346 @@
+:root {
+    --principal: #2643FF;
+    --back-principal: #e7e7e7;
+    --back-contrast: #c8c8c8;
+    --font: #131313;
+    --Logo-name: url('./ps4-Controller-clear2.svg');
+    --name-site: url('./ps-letter3.svg');
+    --auth-logo: url('./authLogoForClearGray.svg');
+    --theme-logo: url('./moon.svg');
+}
+
+/* :root {
+    --principal: #3AFF33;
+    --back-principal: #131313;
+    --back-contrast: #adadad;
+    --font: #e7e7e7;
+    --Logo-name: url('./ps4-Controller-clear2.svg');
+    --name-site: url('./ps-letter3.svg');
+    --auth-logo: url('./authLogoForClearGray.svg');
+    --theme-logo: url('./moon.svg');
+} */
+
+html {
+    font-size: 6.25%;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    min-width: 320rem;
+    background-color: var(--back-principal);
+
+}
+
+.loader {
+    display: block;
+    margin: 0 auto;
+    height: 40rem;
+    width: 60rem;
+    /*Momentaneo*/
+    margin-top: 55rem;
+    /* scroll-margin-top: 55px; */
+}
+
+.error {
+    padding: 16rem;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    background-color: #dc3545;
+}
+
+/* /////////////////////// Header ///////////////////////*/
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55rem;
+    padding: 0 24rem;
+    background-color: var(--back-principal);
+    border-bottom: thin solid var(--back-contrast);
+}
+
+.header-logo-name {
+    display: flex;
+    gap: 5rem;
+}
+
+.header-logo {
+    height: 35rem;
+    width: 60rem;
+    background-image: var(--Logo-name);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header-name {
+    height: 35rem;
+    width: 170rem;
+    background-image: var(--name-site);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header-search-form {
+    position: relative;
+    width: 35%;
+}
+
+.header-input-search {
+    height: 35rem;
+    width: 100%;
+    padding: 0 10rem 0 35rem;
+    font-size: 12rem;
+    font-weight: 700;
+    border-radius: 8rem;
+    border: none;
+    outline-color: var(--principal);
+    background-color: var(--back-contrast);
+}
+
+.header-input-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35rem;
+    width: 35rem;
+    background-image: url('./lupa.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    border-radius: 8rem 0 0 8rem;
+}
+
+.header-input-search::placeholder {
+    color: var(--font);
+}
+
+.header-btnTheme-authLogo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 180rem;
+    background-image: var(--auth-logo);
+    background-repeat: no-repeat;
+    background-position: 90rem -55rem;
+    background-size: 80%;
+}
+
+.header-btn-theme {
+    height: 35rem;
+    width: 25rem;
+    border: none;
+    background: none;
+    background-image: var(--theme-logo);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    border-radius: 5rem;
+    transition: .2s ease;
+}
+
+.header-btn-theme:hover {
+    background-color: var(--back-contrast);
+}
+
+/* /////////////////////// Side Menu ///////////////////////*/
+
+.sidebar-menu {
+    position: fixed;
+    top: 50vh;
+    left: 10rem;
+    width: 35rem;
+    padding: 4rem;
+    border-radius: 8rem;
+    transform: translate(0, -77.5rem);
+    overflow-x: hidden;
+    border: solid 1rem var(--back-contrast);
+    background-color: var(--back-principal);
+    transition: .4s ease;
+}
+
+.open-sidebar-menu {
+    width: 145rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    height: 100%;
+    width: 100%;
+}
+
+.option-menu {
+    display: flex;
+    gap: 10rem;
+    text-decoration: none;
+    border-radius: 5rem;
+    transition: .2s;
+}
+
+.option-menu:hover {
+    background-color: var(--back-contrast);
+    font-weight: 500;
+}
+
+.menu-btn {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: #131313;
+}
+
+.open-menu-btn {
+    margin: 0 0 0 auto;
+}
+
+.option-menu-img {
+    height: 25rem;
+    min-width: 25rem;
+    border-radius: 5rem;
+    background-color: #2643FF;
+}
+
+.option-menu-text {
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    width: 0;
+    color: var(--font);
+    transition: 1s;
+}
+
+.open-menu-text {
+    visibility: visible;
+    width: auto;
+}
+
+/* /////////////////////// Main ///////////////////////*/
+
+.main {
+    margin: 55rem 60rem 0 60rem;
+    transition: .4s ease;
+}
+
+.main-open-menu {
+    margin: 55rem 0 0 165rem;
+}
+
+/* /////////////////////// Home ///////////////////////*/
+
+.home-games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20rem;
+    height: calc(100vh - 55rem);
+    min-width: 320rem;
+    padding: 20rem 0;
+    min-height: calc(100vh - 55rem);
+    background-color: burlywood;
+}
+
+.home-best-games {
+    flex-grow: 1;
+    height: 100%;
+    min-width: 450rem;
+    width: calc(60% - 10rem);
+    background-color: orangered;
+}
+
+.home-trailers {
+    flex-grow: 1;
+    min-width: 280rem;
+    width: calc(40% - 10rem);
+    background-color: aquamarine;
+}
+
+.home-grid-games {
+    height: calc(100% - 17rem);
+    /* padding: 20rem 0; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15rem;
+    background-color: brown;
+}
+
+.home-card-1 {
+    border-radius: 10rem;
+    background-color: cornflowerblue;
+    grid-area: 1/1/3/3;
+}
+
+.home-card-2 {
+    background-color: greenyellow;
+    /* grid-area: 32/1/47/15; */
+}
+
+.home-card-3 {
+    background-color: yellow;
+    grid-area: 2/3/4/4;
+}
+
+.home-card-4 {
+    background-color: crimson;
+    /* grid-area: 3/34/47/89; */
+}
+
+.home-card-5 {
+    background-color: slateblue;
+}
+
+
+@media screen and (max-width: 850px) {
+    .main {
+        margin: 55rem 40rem 0 40rem;
+    }
+
+    .home-games {
+        min-width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .main {
+        margin: 55rem 20rem 0 20rem;
+    }
+
+    .home-grid-games {
+        height: auto;
+        grid-template-columns: 1fr;
+        min-width: auto;
+        /* place-items: center; */
+        /* Cambia a una sola columna en pantallas más pequeñas */
+    }
+
+    .home-card-1 {
+        grid-area: initial;
+        height: 50rem;
+        /* margin: 0 auto   ; */
+    }
+
+    .home-card-3 {
+        background-color: yellow;
+        grid-area: initial;
+        height: 50rem;
+    }
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="204.04713"
+   height="20.970284"
+   viewBox="0 0 53.987472 5.5483875"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="ps-letter3.svg"
+   inkscape:version="1.3.1 (91b66b0783, 2023-11-16)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:export-bgcolor="#00000000"
+     inkscape:zoom="2.6292809"
+     inkscape:cx="141.67372"
+     inkscape:cy="10.078801"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <rect
+       x="125.5096"
+       y="37.272549"
+       width="193.96939"
+       height="39.554543"
+       id="rect11" />
+  </defs>
+  <g
+     id="g1"
+     transform="translate(-0.4537585,-0.41222912)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:8.88px;font-family:Orbitron;-inkscape-font-specification:'Orbitron Bold';letter-spacing:0.264583px;fill:#2643ff;fill-opacity:1;stroke:#2643ff;stroke-width:0.396875;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       x="0.4546406"
+       y="4.6746635"
+       id="text6-9"><tspan
+         sodipodi:role="line"
+         id="tspan6-8"
+         style="font-size:5.64444px;line-height:8.88px;letter-spacing:0.264583px;fill:#2643ff;fill-opacity:1;stroke:#2643ff;stroke-width:0.396875;stroke-dasharray:none;stroke-opacity:1"
+         x="0.4546406"
+         y="4.6746635">VIDEOGAME<tspan
+   style="font-size:5.64444px;line-height:8.88px;stroke-width:0.396875;stroke-dasharray:none"
+   id="tspan3" /></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,9.1848244,-7.4818742)"
+       id="text10"
+       style="font-weight:bold;font-size:10.6667px;line-height:20.9764px;font-family:Orbitron;-inkscape-font-specification:'Orbitron Bold';letter-spacing:1px;white-space:pre;shape-inside:url(#rect11);fill:#2643ff;fill-opacity:1;stroke:#2643ff;stroke-width:0.755906;stroke-dasharray:none;paint-order:fill markers stroke"><tspan
+         x="125.50977"
+         y="50.428313"
+         id="tspan1">[ZONE]</tspan></text>
+  </g>
+</svg>
