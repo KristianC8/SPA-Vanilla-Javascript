@@ -1,4 +1,4 @@
-import api from './api_key.js'
+import api from './API/api_key.js'
 // Api RAWG
 const DOMAIN = "https://api.rawg.io/api",
     // GAMES
