@@ -5,7 +5,6 @@ export function BtnTheme() {
     $btnTheme.classList.add('header-btn-theme')
 
     $themeAtuhLogo.classList.add('header-btnTheme-authLogo')
-    $themeAtuhLogo.classList.add('fondo-opaco')
 
     $themeAtuhLogo.appendChild($btnTheme)
 

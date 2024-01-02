@@ -6,7 +6,7 @@ import { Home } from "./Home.js";
 export function Router() {
     const d = document,
         w = window,
-        $main = d.querySelector('main')
+        $main = d.querySelector('.main-principal')
 
     let { hash } = location
 

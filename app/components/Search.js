@@ -14,5 +14,7 @@ export function Search() {
 
     $searchForm.appendChild($inputSearch)
     $searchForm.appendChild($imgInput)
+
+    $searchForm.setAttribute('id', 'searchGame')
     return $searchForm
 }
