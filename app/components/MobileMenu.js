@@ -61,7 +61,7 @@ export function MobileMenu() {
                 $MobileMenu.style.clipPath = close
             }
             stateMenu = false
-            console.log(stateMenu)
+            // console.log(stateMenu)
         }
     })
 
@@ -86,16 +86,20 @@ export function BtnMobileMenu() {
     const $MobileMenu = document.querySelector('.mobile-menu-container')
 
     $btnMobileMenu.classList.add('btn-mobile-menu')
+    $btnMobileMenu.classList.add('rubberBand')
+    setTimeout(function () {
+        $btnMobileMenu.classList.remove('rubberBand');
+    }, 600);
 
 
     // evento click que abre o cierra el menu mobile 
     document.addEventListener('click', e => {
         if (e.target === $btnMobileMenu || $btnMobileMenu.contains(e.target)) {
 
-            $btnMobileMenu.classList.toggle('rubberBand')
-            // setTimeout(function () {
-            //     $btnMobileMenu.classList.remove('rubberBand');
-            // }, 1000);
+            $btnMobileMenu.classList.add('rubberBand')
+            setTimeout(function () {
+                $btnMobileMenu.classList.remove('rubberBand');
+            }, 600);
 
             const closeWithNav = `circle(1rem at calc(100vw - 34rem) calc(${window.innerHeight}rem - 34rem))`,
                 close = `circle(1rem at calc(100vw - 34rem) calc(100vh - 34rem))`,
@@ -108,12 +112,14 @@ export function BtnMobileMenu() {
                 } else {
                     $MobileMenu.style.clipPath = close
                 }
+                // $btnMobileMenu.style.border = 'solid thin var(--principal)'
             } else {
                 if (isNavigationBarVisible()) {
                     $MobileMenu.style.clipPath = openWithNav
                 } else {
                     $MobileMenu.style.clipPath = open
                 }
+                // $btnMobileMenu.style.border = 'none'
             }
 
             stateMenu = !stateMenu

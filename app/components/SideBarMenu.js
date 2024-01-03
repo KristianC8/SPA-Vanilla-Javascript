@@ -58,7 +58,7 @@ export function SideBarMenu() {
 
     document.addEventListener('click', e => {
         if (e.target === $menuBtn || $menuBtn.contains(e.target)) {
-            console.log(`Estado actual: ${localStorage.getItem('sideMenu')}`);
+            // console.log(`Estado actual: ${localStorage.getItem('sideMenu')}`);
             openMenu();
             $sideBarMenu.classList.toggle('open-sidebar-menu')
             $menuBtn.classList.toggle('open-menu-btn')

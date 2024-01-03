@@ -23,7 +23,7 @@ export function App() {
   Router()
   // $root.appendChild(Loader())
   // Ajax({
-  //   url: 'ulu',
+  //   url: api.GAMES,
   //   cbSuccess: (games) => {
   //     console.log(games)
   //   }

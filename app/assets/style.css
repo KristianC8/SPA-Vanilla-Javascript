@@ -2,7 +2,7 @@
     --principal: #2643FF;
     --back-principal: #e7e7e7;
     --back-contrast: #c8c8c8;
-    --back-mobile-menu: rgb(231, 231, 231, .9);
+    --back-mobile-menu: rgb(200, 200, 200, .9);
     --font: #131313;
     --font-menu: #2643FF;
     --font-medium: 14rem;
@@ -272,53 +272,56 @@ body {
     min-width: 320rem;
     padding: 20rem 0;
     min-height: calc(100vh - var(--header-heigth));
-    background-color: burlywood;
+    /* background-color: burlywood; */
 }
 
 .home-best-games {
     flex-grow: 1;
+    min-width: 550rem;
     width: calc(60% - 10rem);
-    background-color: orangered;
+    /* background-color: orangered; */
 }
 
 .home-trailers {
     flex-grow: 1;
     min-width: 300rem;
     width: calc(40% - 10rem);
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .home-grid-games {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15rem;
-    background-color: brown;
+    /* background-color: brown; */
+}
+
+.cards {
+    border-radius: 10rem;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card-1 {
-    border-radius: 10rem;
     background-color: cornflowerblue;
     grid-area: 1/1/3/3;
+    min-height: 300rem;
+    height: calc(((100vh - var(--header-heigth) - 72rem) / 3) * 2);
 }
 
-.home-card-2 {
+.card-2 {
     background-color: greenyellow;
-    /* grid-area: 32/1/47/15; */
+    grid-area: 1/3/3/4;
+
 }
 
-.home-card-3 {
-    background-color: yellow;
-    grid-area: 2/3/4/4;
+.home-cards {
+    background-color: #e7e7e7;
+    min-height: 160rem;
+    height: calc(((100vh - var(--header-heigth) - 72rem) / 3));
 }
 
-.home-card-4 {
-    background-color: crimson;
-    /* grid-area: 3/34/47/89; */
-}
-
-.home-card-5 {
-    background-color: slateblue;
-}
 
 /* /////////////////////// Mobile Menu ///////////////////////*/
 
@@ -373,8 +376,8 @@ body {
     bottom: 10rem;
     right: 10rem;
     border-radius: 12rem;
-    border: solid thin var(--principal);
-    background-color: var(--back-contrast);
+    border: solid 2rem var(--back-contrast);
+    background-color: var(--back-principal);
 }
 
 
@@ -456,6 +459,32 @@ body {
     .main-mobile-search {
         position: relative;
     }
+
+    .home-grid-games {
+        grid-template-columns: repeat(1, 1fr);
+        /* background-color: brown; */
+    }
+
+    .cards {
+        border-radius: 10rem;
+        min-height: 200rem;
+        height: calc((100vh - var(--header-heigth) - 87rem) / 2);
+    }
+
+    .card-1 {
+        background-color: cornflowerblue;
+        grid-area: initial;
+    }
+
+    .card-2 {
+        background-color: greenyellow;
+        grid-area: initial;
+
+    }
+
+    .home-cards {
+        background-color: #e7e7e7;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -463,7 +492,7 @@ body {
     :root {
         --name-site: url('./ps-letter-mobile.svg');
         --header-heigth: 60rem;
-        --lateral-width: 10rem;
+        --lateral-width: 20rem;
     }
 
     /* Header */
