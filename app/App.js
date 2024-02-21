@@ -1,12 +1,9 @@
-import api from './helpers/rawg_api.js'
-import { Ajax } from './helpers/ajax.js';
-import { Loader } from './components/Loader.js';
 import Header from './components/Header.js';
 import { SideBarMenu } from './components/SideBarMenu.js';
 import { Router } from './components/Router.js';
 import { Main } from './components/Main.js';
 import { MobileMenu, BtnMobileMenu } from './components/MobileMenu.js';
-
+import { Footer } from './components/Footer.js';
 
 
 
@@ -19,6 +16,7 @@ export function App() {
   $root.appendChild(SideBarMenu())
   $root.appendChild(MobileMenu())
   $root.appendChild(BtnMobileMenu())
+  $root.appendChild(Footer())
 
   Router()
   // $root.appendChild(Loader())

@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SPA GAMES</title>
+  <script>
+    const userTheme = localStorage.getItem('theme')
+    const queryTheme = window.matchMedia("(prefers-color-scheme: dark)")
+    if (userTheme === 'dark' || (!userTheme && queryTheme.matches)) document.documentElement.setAttribute('data-theme', "dark")
+    queryTheme.addEventListener('change', e => {
+      let theme = ''
+      e.matches ? theme = 'dark' : theme = 'light'
+      document.documentElement.setAttribute('data-theme', theme)
+    })
+  </script>
   <link rel="stylesheet" href="./app/assets/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

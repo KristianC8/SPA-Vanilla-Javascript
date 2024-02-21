@@ -4,13 +4,13 @@ export function SideBarMenu() {
     <nav class="menu">
     <button class ="menu-btn"></button>
     <a class="option-menu" href="#/">
-    <div class="option-menu-img" src="" alt=""></div><span class="option-menu-text">Inicio</span>
+    <div class="option-menu-img menu-img-home"></div><span class="option-menu-text">Home</span>
     </a>
      <a class="option-menu" href="#/Games">
-    <div class="option-menu-img" src="" alt=""></div><span class="option-menu-text">Juegos</span>
+    <div class="option-menu-img menu-img-games"></div><span class="option-menu-text">Games</span>
     </a>
      <a class="option-menu" href="#/Platforms">
-    <div class="option-menu-img" src="" alt=""></div><span class="option-menu-text">Plataformas</span>
+    <div class="option-menu-img menu-img-platforms"></div><span class="option-menu-text">Platforms</span>
     </a>
     </nav>
     `
