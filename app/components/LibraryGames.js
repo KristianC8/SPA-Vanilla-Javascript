@@ -7,7 +7,8 @@ export function LibraryGames() {
         $Loader = document.querySelector('.loader')
 
     Ajax({
-        url: api.FILTER,
+        domain: api.GAMES,
+        ordering: '-metacritic',
         cbSuccess: (games) => {
             let allGames = games.results
             // console.log(games)
@@ -40,10 +41,12 @@ export function FilterGames() {
     let query = ''
     let renderFilter = (query) => {
         Ajax({
-            url: `${api.FILTER}${query}`,
+            domain: api.GAMES,
+            ordering: '-metacritic',
+            filter: query,
             cbSuccess: (games) => {
                 let FilteredGames = games.results
-                console.log(games)
+                // console.log(games)
                 let html = ''
                 if (FilteredGames.length < 20 || games.next === null) localStorage.setItem('EndPage', false)
                 else localStorage.setItem('EndPage', true)
@@ -123,7 +126,7 @@ export function FilterGames() {
                 query = searchArr.join('&')
                 if (!contains) query += `&genres=${e.target.dataset.id}`
             }
-            // console.log(query)
+            console.log(query)
             localStorage.setItem('query', query)
             renderFilter(query)
             $genreSelected.textContent = `${e.target.textContent}`
@@ -132,7 +135,7 @@ export function FilterGames() {
             // console.log('genre')
             $genreSelected.textContent = `GENRE`
             if (!query) return false
-            if (query.includes('genre')) {
+            if (query.includes('genres')) {
                 query = query.replace(/&genres=[^&]*/, '');
                 // console.log(query)
                 localStorage.setItem('query', query)

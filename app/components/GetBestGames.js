@@ -8,10 +8,15 @@ export function GetBestGames() {
         $footer = document.querySelector('.footer')
 
     Ajax({
-        url: api.BEST_GAMES,
+        domain: api.GAMES,
+        metacritic: `80,${Math.floor(Math.random() * (100 - 92) + 92)}`,
+        ordering: `-metacritic`,
+        platforms: `187,18,1,186`,
+        page_size: `5`,
+        dates: `2010-01-01,2023-12-31`,
         cbSuccess: (best_games) => {
             let games = best_games.results
-            // console.log(games)
+
             let html = ''
             for (let i = 0; i < games.length; i++) {
                 let game = games[i]

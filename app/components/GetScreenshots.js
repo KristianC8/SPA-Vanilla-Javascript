@@ -1,5 +1,4 @@
 import { Ajax } from "../helpers/ajax.js";
-import api_key from "../helpers/API/api_key.js";
 import api from "../helpers/rawg_api.js";
 
 
@@ -10,10 +9,12 @@ export function GetSreenshots() {
 
     let { hash } = window.location
 
-    let urlss = `${api.GAME}${hash.slice(2)}/screenshots?key=${api_key.APIKEY}`
+    let game = `${hash.slice(2)}`
 
     Ajax({
-        url: urlss,
+        domain: api.GAMES,
+        game: game,
+        screenshots: 'ok',
         cbSuccess: (screenshots) => {
 
             // console.log(screenshots)

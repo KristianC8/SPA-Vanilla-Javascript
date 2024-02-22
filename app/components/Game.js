@@ -35,7 +35,7 @@ export function Game() {
         </div>
         <div class="game-ss game-ss-content">
           <div class="game-ss-bigcontent">
-          <img class="game-screenshot" src="" alt="ss1">
+          ${Loader()}
           </div>
         </div>
         <div class="game-ss game-ss-more">
@@ -51,7 +51,7 @@ export function Game() {
           </div>
           <div class="game-ss game-ss-contentM">
             <div class="game-ss-bigcontentM">
-              <img class="game-screenshotM" src="" alt="ss1">
+            
             </div>
           </div>
           <div class="game-ss game-ss-more">

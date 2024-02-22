@@ -1,16 +1,14 @@
 import { Ajax } from "../helpers/ajax.js"
 import api from "../helpers/rawg_api.js"
-import api_key from "../helpers/API/api_key.js";
 import esrb from "../helpers/esrb_img.js"
 import platform_img from "../helpers/platform_img.js";
 
 export function GetGame() {
 
   let { hash } = window.location
-  // console.log(hash.slice(2))
 
-  let url = `${api.GAME}${hash.slice(2)}?key=${api_key.APIKEY}`
-  // console.log(url)
+  let game = `${hash.slice(2)}`
+
 
   const $game_page = document.querySelector('.game'),
     $game_screenshots = document.querySelector('.game-screenshots'),
@@ -18,7 +16,8 @@ export function GetGame() {
     $webSiteLink = document.querySelector('.game-data-website')
 
   Ajax({
-    url: url,
+    domain: api.GAMES,
+    game: game,
     cbSuccess: (game) => {
 
       let { background_image, metacritic_url, metacritic, name, esrb_rating, platforms, released,

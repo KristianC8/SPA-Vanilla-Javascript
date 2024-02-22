@@ -1,18 +1,16 @@
 import { Ajax } from "../helpers/ajax.js";
 import api from "../helpers/rawg_api.js";
-import api_key from "../helpers/API/api_key.js";
-
 
 export function GetResults() {
 
     let query = localStorage.getItem('gmSearch')
-    let URL = `${api.SEARCH}?key=${api_key.APIKEY}&search=${query}`
 
     const $gridResults = document.querySelector('.results-grid')
     const $Results = document.querySelector('.results')
 
     Ajax({
-        url: URL,
+        domain: api.GAMES,
+        search: query,
         cbSuccess: (results) => {
             console.log(results)
             let allResults = results.results
