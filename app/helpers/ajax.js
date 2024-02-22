@@ -1,9 +1,9 @@
 export async function Ajax(props, selector) {
 
-    let { domain, game, metacritic, ordering, platforms, page_size, dates, search, screenshots, cbSuccess } = props;
+    let { domain, game, metacritic, ordering, platforms, page_size, dates, search, screenshots, filter, page, cbSuccess } = props;
 
     try {
-        let response = await fetch(`.netlify/functions/API?domain=${domain}${!game ? '' : `&game=${game}`}${!metacritic ? '' : `&metacritic=${metacritic}`}${!ordering ? '' : `&ordering=${ordering}`}${!platforms ? '' : `&platforms=${platforms}`}${!page_size ? '' : `&page_size=${page_size}`}${!dates ? '' : `&dates=${dates}`}${!search ? '' : `&search=${search}`}${!screenshots ? '' : `&screenshots=${screenshots}`}`)
+        let response = await fetch(`.netlify/functions/API?domain=${domain}${!game ? '' : `&game=${game}`}${!metacritic ? '' : `&metacritic=${metacritic}`}${!ordering ? '' : `&ordering=${ordering}`}${!platforms ? '' : `&platforms=${platforms}`}${!page_size ? '' : `&page_size=${page_size}`}${!dates ? '' : `&dates=${dates}`}${!search ? '' : `&search=${search}`}${!screenshots ? '' : `&screenshots=${screenshots}`}${!filter ? '' : `${filter}`}${!page ? '' : `&page=${page}`}`)
         if (!response.ok) throw { status: response.status, statusText: response.statusText }
 
         let data = await response.json()

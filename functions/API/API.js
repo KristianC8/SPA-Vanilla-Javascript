@@ -2,11 +2,11 @@ const axios = require('axios')
 
 exports.handler = async (event, context) => {
 
-  const { domain, game, metacritic, ordering, platforms, page_size, dates, screenshots, search } = event.queryStringParameters
+  const { domain, game, metacritic, ordering, platforms, page_size, dates, screenshots, search, genres, page } = event.queryStringParameters
 
   const apiKey = process.env.API_KEY;
 
-  const url = `${domain}${!game ? '' : `/${game}`}${!screenshots ? '' : `/screenshots`}?${!metacritic ? '' : `&metacritic=${metacritic}`}${!ordering ? '' : `&ordering=${ordering}`}${!platforms ? '' : `&platforms=${platforms}`}${!page_size ? '' : `&page_size=${page_size}`}${!dates ? '' : `&dates=${dates}`}${!search ? '' : `&search=${search}`}&key=${apiKey}`; // URL de la API externa
+  const url = `${domain}${!game ? '' : `/${game}`}${!screenshots ? '' : `/screenshots`}?${!metacritic ? '' : `&metacritic=${metacritic}`}${!ordering ? '' : `&ordering=${ordering}`}${!platforms ? '' : `&platforms=${platforms}`}${!page_size ? '' : `&page_size=${page_size}`}${!dates ? '' : `&dates=${dates}`}${!search ? '' : `&search=${search}`}${!genres ? '' : `&genres=${genres}`}${!page ? '' : `&page=${page}`}&key=${apiKey}`; // URL de la API externa
 
   try {
     const { data } = await axios.get(url);

@@ -43,34 +43,62 @@ export function infiniteScroll() {
                 // if (!$loader) $gamesGrid.insertAdjacentHTML('beforeend', Loader())
                 $gamesGrid.insertAdjacentHTML('beforeend', Loader())
 
+
+
+
                 if (hash.includes('#/Games')) {
-                    if (!query) apiURL = `${api.FILTER}&page=${page}`
+                    if (!query) {
+                        if (page === 1) return false
+                        Ajax({
+                            domain: api.GAMES,
+                            ordering: '-metacritic',
+                            page: page,
+                            cbSuccess: (games) => {
+                                let html = ''
+                                let allGames = games.results
+                                if (allGames.length < 20 || games.next === null) localStorage.setItem('EndPage', false)
+                                else localStorage.setItem('EndPage', true)
+                                allGames.forEach(game => {
+                                    html += GameCard(game)
+                                });
+
+                                $gamesGrid.insertAdjacentHTML('beforeend', html)
+                                let $loader = $gamesGrid.querySelectorAll('.loader')
+                                $loader.forEach(loader => { loader.style.display = 'none' })
+
+                            }
+                        }, '.games')
+                    }//apiURL = `${api.FILTER}&page=${page}`
                     else {
-                        apiURL = `${api.FILTER}${query}&page=${page}`
+                        //apiURL = `${api.FILTER}${query}&page=${page}`
+                        if (page === 1) return false
+                        Ajax({
+                            domain: api.GAMES,
+                            ordering: "-metacritic",
+                            filter: query,
+                            page: page,
+                            cbSuccess: (games) => {
+                                let html = ''
+                                let allGames = games.results
+                                if (allGames.length < 20 || games.next === null) localStorage.setItem('EndPage', false)
+                                else localStorage.setItem('EndPage', true)
+                                allGames.forEach(game => {
+                                    html += GameCard(game)
+                                });
+
+                                $gamesGrid.insertAdjacentHTML('beforeend', html)
+                                let $loader = $gamesGrid.querySelectorAll('.loader')
+                                $loader.forEach(loader => { loader.style.display = 'none' })
+
+                            }
+                        }, '.games')
                     }
                 } else return false
 
 
 
-                console.log(apiURL)
-                if (page === 1) return false
-                Ajax({
-                    url: apiURL,
-                    cbSuccess: (games) => {
-                        let html = ''
-                        let allGames = games.results
-                        if (allGames.length < 20 || games.next === null) localStorage.setItem('EndPage', false)
-                        else localStorage.setItem('EndPage', true)
-                        allGames.forEach(game => {
-                            html += GameCard(game)
-                        });
 
-                        $gamesGrid.insertAdjacentHTML('beforeend', html)
-                        let $loader = $gamesGrid.querySelectorAll('.loader')
-                        $loader.forEach(loader => { loader.style.display = 'none' })
 
-                    }
-                }, '.games')
 
 
                 console.log(page)
