@@ -64,6 +64,24 @@ export function SideBarMenu() {
             $menuBtn.classList.toggle('open-menu-btn')
             $inputText.forEach($input => $input.classList.toggle('open-menu-text'))
             $main.classList.toggle('main-open-menu')
+
+            const menu = localStorage.getItem('sideMenu')
+
+            if (!menu || menu === 'closed') {
+                document.querySelector('.game-screenshots-content').classList.add('closed')
+                document.querySelector('.game-screenshots-contentM').classList.add('closed')
+                document.querySelector('.game-screenshots-content').classList.remove('open')
+                document.querySelector('.game-screenshots-contentM').classList.remove('open')
+                document.querySelector('.game-screenshots-flex').classList.add('closed')
+                document.querySelector('.game-screenshots-flex').classList.remove('open')
+            } else {
+                document.querySelector('.game-screenshots-content').classList.add('open')
+                document.querySelector('.game-screenshots-contentM').classList.add('open')
+                document.querySelector('.game-screenshots-content').classList.remove('closed')
+                document.querySelector('.game-screenshots-contentM').classList.remove('closed')
+                document.querySelector('.game-screenshots-flex').classList.add('open')
+                document.querySelector('.game-screenshots-flex').classList.remove('closed')
+            }
         }
     });
 

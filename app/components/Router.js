@@ -12,6 +12,7 @@ import { platformsTheme } from "../helpers/platforms_theme.js";
 
 
 
+
 export function Router() {
     const d = document,
         w = window,
@@ -42,7 +43,5 @@ export function Router() {
         $main.innerHTML = Game()
         GetGame()
         GetSreenshots()
-
-
     }
 }

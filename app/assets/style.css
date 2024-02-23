@@ -1442,18 +1442,13 @@ main h2 {
 
 }
 
-/* @media screen and (max-width: 1144px) { */
-@media screen and (max-width: 1161px) {
+@media screen and (max-width: 1206px) {
 
-    :root {
-        --screenshot-heigth: 440rem;
-    }
-
-    .game-screenshots-content {
+    .game-screenshots-content.open {
         display: none;
     }
 
-    .game-screenshots-contentM {
+    .game-screenshots-contentM.open {
         display: block;
         position: relative;
         width: 100%;
@@ -1467,6 +1462,14 @@ main h2 {
         -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .game-screenshots-content.closed {
+        display: flex;
+    }
+
+    .game-screenshots-contentM.closed {
+        display: none;
     }
 
     .game-ss-contentM {
@@ -1528,6 +1531,140 @@ main h2 {
     }
 
     .game-screenshots-flex {
+        display: flex;
+    }
+
+    .apiLink-game {
+        max-width: initial;
+        margin: 20rem auto 0 auto;
+    }
+
+    .game-screenshots-flex.open {
+        display: block;
+        height: auto;
+        padding: 0 20rem;
+    }
+
+    .game-screenshots-flex.closed {
+        display: flex;
+    }
+}
+
+
+
+/* @media screen and (max-width: 1144px) { */
+@media screen and (max-width: 1161px) {
+    :root {
+        --screenshot-heigth: 440rem;
+    }
+
+    .game-screenshots-content.closed {
+        display: none;
+    }
+
+    .game-screenshots-contentM.closed {
+
+        display: block;
+        position: relative;
+        width: 100%;
+        padding: 0 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--back-contrast);
+        border-radius: 10rem;
+        -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .game-screenshots-flex {
+        display: block;
+        height: auto;
+        padding: 0 20rem;
+    }
+}
+
+/*@media screen and (max-width: 1161px) {
+    .game-screenshots-content.closed {
+        display: none;
+    }
+
+    .game-screenshots-contentM.closed {
+        display: block;
+        position: relative;
+        width: 100%;
+        padding: 0 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--back-contrast);
+        border-radius: 10rem;
+        -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .game-ss-contentM {
+        width: 90%;
+        height: auto;
+        max-height: initial;
+        overflow: hidden;
+    }
+
+    .game-ss-bigcontentM {
+        width: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 0;
+        transition: all .5s ease;
+    }
+
+    .game-screenshotM {
+        min-width: 100%;
+        width: 100%;
+        min-height: var(--screenshot-heigth);
+        height: auto;
+        display: block;
+        border-radius: 10rem;
+    }
+
+    .game-description {
+        padding: 10rem 60rem 30rem 60rem;
+    }
+
+    .game-ss-btnM {
+        position: absolute;
+        height: 40rem;
+        width: 40rem;
+        border: none;
+        background-color: var(--back-contrast);
+        top: auto;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 70%;
+    }
+
+    .game-ss-nextbtnM {
+        right: calc(50% - 50rem);
+        background-image: var(--arrow-rigth);
+        background-size: 40%;
+    }
+
+    .game-ss-prevbtnM {
+        right: calc(50% + 10rem);
+        background-image: var(--arrow-left);
+        background-size: 40%;
+    }
+
+    .popup-ss {
+        display: none;
+    }
+
+    .game-screenshots-flex {
         display: block;
         height: auto;
         padding: 0 20rem;
@@ -1538,7 +1675,7 @@ main h2 {
         margin: 20rem auto 0 auto;
     }
 
-}
+} */
 
 @media screen and (max-width: 850px) {
 

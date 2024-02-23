@@ -29,20 +29,20 @@ export function Game() {
     </div>
 
     <div class="game-screenshots isInactive">
-      <div class="game-screenshots-content">
-        <div class="game-ss game-ss-title">
-          <h3>SCREENSHOTS</h3>
-        </div>
-        <div class="game-ss game-ss-content">
-          <div class="game-ss-bigcontent">
-          ${Loader()}
+        <div class="game-screenshots-content">
+          <div class="game-ss game-ss-title">
+            <h3>SCREENSHOTS</h3>
           </div>
+          <div class="game-ss game-ss-content">
+            <div class="game-ss-bigcontent">
+            ${Loader()}
+            </div>
+          </div>
+          <div class="game-ss game-ss-more">
+          </div>
+          <button class="game-ss-btn game-ss-prevbtn"></button>
+          <button class="game-ss-btn game-ss-nextbtn"></button>
         </div>
-        <div class="game-ss game-ss-more">
-        </div>
-        <button class="game-ss-btn game-ss-prevbtn"></button>
-        <button class="game-ss-btn game-ss-nextbtn"></button>
-      </div>
  
 
         <div class="game-screenshots-contentM">
