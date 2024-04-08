@@ -66,18 +66,18 @@ export function Game() {
 
     <div class="popup-ss isInactive">
         <div class="popup-ss-grid">
-      <div class="popup-ss-container">
-        <div class="popup-ss-slider">
-          <span class="popup-ss-close"></span>
-      <button class="popup-ss-btn popup-ss-prevbtn"></button>
-      <button class="popup-ss-btn popup-ss-nextbtn"></button>
+    
+              <div class="popup-ss-container">
+                  <div class="popup-ss-slider">
+                    <span class="popup-ss-close"></span>
+                    <button class="popup-ss-btn popup-ss-prevbtn"></button>
+                    <button class="popup-ss-btn popup-ss-nextbtn"></button>
+                      <div class="popup-ss-content">
+                      </div>
+                  </div>
+              </div>  
 
-        <div class="popup-ss-content">
         </div>
-
-      </div>
-      </div>
-    </div>
     </div>
 
 

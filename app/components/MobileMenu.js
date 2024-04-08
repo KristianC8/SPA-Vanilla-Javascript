@@ -9,9 +9,9 @@ export function MobileMenu() {
     const $MobileMenu = document.createElement('div'),
         $MobileMenuOptions = `
     <nav class="mobile-menu">
-    <a class="option-mobile-menu" href="#/">Inicio</a>
+    <a class="option-mobile-menu" href="#/">Home</a>
     <a class="option-mobile-menu" href="#/Games">Games</a>
-    <a class="option-mobile-menu" href="#/Platforms">Plataformas</a>
+    <a class="option-mobile-menu" href="#/Platforms">Platforms</a>
     </nav>
     `
 

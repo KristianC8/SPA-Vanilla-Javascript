@@ -6,6 +6,7 @@ export function GetSreenshots() {
     const $screesnShots = document.querySelector('.game-ss-bigcontent')
     const $screesnShotsM = document.querySelector('.game-ss-bigcontentM')
     const $screesnShotsPop = document.querySelector('.popup-ss-content')
+    const $sidebarMenu = document.querySelector('.sidebar-menu')
 
     let { hash } = window.location
 
@@ -157,6 +158,9 @@ export function GetSreenshots() {
                     $btnNextPop.disabled = false
                     $btnNextPop.style.opacity = 1
                     $footer.style.display = 'block'
+                    // $sidebarMenu.style.visibility = 'visible';
+                    // $sidebarMenu.style.opacity = '1';
+                    $sidebarMenu.style.display = 'block';
                 }
 
                 if (e.target.matches('.game-screenshot')) {
@@ -173,6 +177,10 @@ export function GetSreenshots() {
                     $screesnShotsPop.style.transform = `translateX(-${operacion}%)`
                     $popUp.classList.remove('isInactive')
                     $footer.style.display = 'none'
+
+                    // $sidebarMenu.style.visibility = 'hidden';
+                    // $sidebarMenu.style.opacity = '0';
+                    $sidebarMenu.style.display = 'none';
 
 
                     // $popUp.classList.add('fadeIn')

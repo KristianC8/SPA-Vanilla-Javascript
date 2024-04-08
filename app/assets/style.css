@@ -19,7 +19,7 @@
     --back-contrast-transparent: rgb(200, 200, 200, .9);
     --back-popup: rgba(231, 231, 231, .6);
     --back-btnMenu: #131313;
-    --back-dark-transparent: rgb(19, 19, 19, .5);
+    --back-dark-transparent: rgb(200, 200, 200, .5);
     --font-clear-ever: #e7e7e7;
     --back-error: #dc3545;
     --font: #131313;
@@ -308,7 +308,7 @@ body {
     overflow-x: hidden;
     border: solid 1rem var(--back-contrast);
     background-color: var(--back-principal);
-    transition: .4s ease;
+    /* transition: .4s ease; */
     visibility: visible;
     animation: fadeIn .5s both;
     -webkit-animation: fadeIn .5s both;
@@ -853,6 +853,7 @@ main h2 {
     min-height: 300rem;
     height: calc((100vh - var(--header-heigth)) * 0.8);
     border-radius: 10rem 10rem 0 0;
+    aspect-ratio: 16/9;
 }
 
 .game-description {
@@ -1106,19 +1107,22 @@ main h2 {
     display: flex;
     justify-content: center;
     align-items: start;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: fixed;
+    /* top: calc((--header-heigth) + 50rem); */
+    top: var(--header-heigth);
+    left: var(--lateral-width);
+    right: var(--lateral-width);
     bottom: 0;
-    padding: 60rem;
     backdrop-filter: blur(10rem);
     background-color: var(--back-popup);
+    padding: 60rem 70rem;
+    /* z-index: 1; */
+
 }
 
 .popup-ss-container {
     position: relative;
-    width: 80%;
+    width: 78%;
 }
 
 .popup-ss-slider {
@@ -1128,9 +1132,9 @@ main h2 {
 
 .popup-ss-btn {
     position: absolute;
-    top: calc(50% - 30rem);
-    height: 60rem;
-    width: 40rem;
+    top: calc(50% - 25rem);
+    height: 50rem;
+    width: 30rem;
     border: none;
     background-repeat: no-repeat;
     background-position: center;
@@ -1153,11 +1157,11 @@ main h2 {
 .popup-ss-close {
     position: absolute;
     display: block;
-    height: 40rem;
-    width: 40rem;
+    height: 35rem;
+    width: 35rem;
     padding: 2rem;
-    top: -50rem;
-    right: calc(50% - 20rem);
+    top: -40rem;
+    right: calc(50% - 15rem);
     border-radius: 50%;
     font-size: var(--font-ultra-large);
     cursor: pointer;
@@ -1181,6 +1185,7 @@ main h2 {
     border-radius: 10rem;
     object-fit: cover;
     object-position: center;
+    aspect-ratio: 16/9;
 }
 
 /* /////////////////////// Results Search//////////////////////////*/
@@ -1645,9 +1650,10 @@ main h2 {
     }
 
     .description-title {
-        top: calc(((100vh - var(--header-heigth)) * 0.8) - 3%);
-        left: 20rem;
+        top: calc(((100vh - var(--header-heigth)) * 0.8) - 5%);
+        left: 60rem;
     }
+
 
     .game-screenshots-contentM {
         padding: 0 15rem;
@@ -1759,10 +1765,10 @@ main h2 {
     }
 
     .description-title {
-        width: 95%;
-        top: calc(((100vh - var(--header-heigth)) * 0.8) - 10%);
-        left: 2.5%;
-        padding: 10rem;
+        width: 80%;
+        top: calc(((100vh - var(--header-heigth)) * 0.8) - 110rem);
+        left: 30rem;
+        padding: 5rem 10rem;
         backdrop-filter: blur(4rem);
         font-size: var(--font-ultra-large);
     }
