@@ -308,7 +308,7 @@ body {
     overflow-x: hidden;
     border: solid 1rem var(--back-contrast);
     background-color: var(--back-principal);
-    /* transition: .4s ease; */
+    transition: .4s ease;
     visibility: visible;
     animation: fadeIn .5s both;
     -webkit-animation: fadeIn .5s both;
