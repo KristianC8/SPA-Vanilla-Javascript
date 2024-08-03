@@ -9,18 +9,20 @@
     --lateral-width: 3.75rem;
     --line-heigth-title-section: 1rem;
     --space-between: .9375rem;
-    --screenshot-heigth: 8.75rem;
+    --screenshot-heigth: 7.5rem;
 
 
     --principal: #2643FF;
     --principal-transparent: rgb(38, 67, 255, .8);
     --back-principal: #e7e7e7;
-    --back-contrast: #c8c8c8;
+    --back-contrast: #3d3d3d;
+    --back-contrast2: #888888;
     --back-contrast-transparent: rgb(200, 200, 200, .9);
     --back-popup: rgba(231, 231, 231, .6);
     --back-btnMenu: #131313;
     --back-dark-transparent: rgb(200, 200, 200, .5);
     --font-clear-ever: #e7e7e7;
+    --font-title-game: #a8a8a8;
     --back-error: #dc3545;
     --font: #131313;
     --font-contrary: #e7e7e7;
@@ -79,14 +81,15 @@
     --principal: #09de5a;
     --principal-transparent: rgb(9, 222, 90, .85);
     --back-principal: #131313;
-    --back-contrast: #3d3d3d;
+    --back-contrast: #888888;
+    --back-contrast2: #3d3d3d;
     --back-contrast-transparent: rgb(61, 61, 61, .9);
     --back-popup: rgb(19, 19, 19, .6);
-    --back-btnMenu: #c8c8c8;
+    --back-btnMenu: #888888;
     --back-dark-transparent: rgb(19, 19, 19, .5);
-    --font: #c8c8c8;
+    --font: #888888;
     --font-contrary: #131313;
-    --font-clear-ever: #c8c8c8;
+    --font-clear-ever: #888888;
     --back-error: #dc3545;
     --excellent: #003405;
     --excellent-tranparent: rgb(92, 255, 80, .8);
@@ -131,7 +134,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: var(--font-medium);
+    /* font-size: var(--font-medium); */
     font-family: 'Orbitron', sans-serif;
     transition: background-color var(--transition), box-shadow var(--transition);
 }
@@ -200,7 +203,7 @@ body {
     height: var(--header-heigth);
     padding: 0 1.5rem;
     background-color: var(--back-principal);
-    border-bottom: thin solid var(--back-contrast);
+    border-bottom: thin solid var(--back-contrast2);
     background-image: var(--auth-logo);
     background-repeat: no-repeat;
     background-position: calc(100vw - 7.1875rem) calc((var(--header-heigth) - 1.5625rem) * (-1));
@@ -247,7 +250,7 @@ body {
     padding: 0 .625rem 0 2.375rem;
     font-size: var(--font-small);
     font-weight: 700;
-    color: var(--font);
+    color: var(--font-contrary);
     border-radius: .5rem;
     border: none;
     outline-color: var(--principal);
@@ -268,7 +271,7 @@ body {
 }
 
 .header-input-search::placeholder {
-    color: var(--font);
+    color: var(--font-contrary);
 }
 
 .header-btnTheme-authLogo {
@@ -306,7 +309,7 @@ body {
     border-radius: .5rem;
     transform: translate(0, -4.84375rem);
     overflow-x: hidden;
-    border: solid thin var(--back-contrast);
+    border: solid thin var(--back-contrast2);
     background-color: var(--back-principal);
     transition: .4s ease;
     visibility: visible;
@@ -336,7 +339,6 @@ body {
 
 .option-menu:hover {
     background-color: var(--back-contrast);
-    font-weight: 500;
 }
 
 .menu-btn {
@@ -384,6 +386,12 @@ body {
     width: 0;
     color: var(--font);
     transition: 1s;
+    font-weight: 700;
+}
+
+.option-menu-text:hover {
+    color: var(--font-contrary);
+    /* font-weight: 500; */
 }
 
 .open-menu-text {
@@ -698,6 +706,7 @@ main h2 {
     justify-content: space-between;
     gap: .625rem;
     padding: .3125rem;
+    color: var(--font-contrary);
 }
 
 .selected-name {
@@ -815,7 +824,7 @@ main h2 {
     min-width: 34.375rem;
     width: calc(80% - .625rem);
     border-radius: .625rem;
-    border: thin solid var(--back-contrast);
+    border: thin solid var(--back-contrast2);
     -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
@@ -855,6 +864,7 @@ main h2 {
     height: calc((100vh - var(--header-heigth)) * 0.8);
     border-radius: .625rem .625rem 0 0;
     aspect-ratio: 16/9;
+    mask-image: linear-gradient(white 95%, transparent);
 }
 
 .game-description {
@@ -868,20 +878,17 @@ main h2 {
     background-color: var(--back-principal);
 }
 
-.game-background {
+/* .game-background {
     position: absolute;
     top: 0;
     left: 0;
     height: 2.5rem;
     width: 100vw;
     transform: translate(-1.875rem, -1.875rem);
-    /* min-height: 6.25rem; */
     border-radius: 0 0 .625rem .625rem;
-    /* background: rgb(231, 231, 231, .9); */
     background: var(--game-division);
     filter: blur(.3125rem);
-    /*5pc*/
-}
+} */
 
 .description-title {
     position: absolute;
@@ -889,10 +896,10 @@ main h2 {
     padding: .3125rem .625rem;
     border-radius: .625rem;
     left: 2.5rem;
-    color: var(--font-clear-ever);
+    color: var(--font-title-game);
     font-size: var(--font-ultra-large);
-    backdrop-filter: blur(.3125rem);
-    background-color: var(--back-dark-transparent);
+    backdrop-filter: blur(1.25rem);
+    background-color: rgb(19, 19, 19, .8);
 }
 
 .description-features {
@@ -1046,6 +1053,7 @@ main h2 {
 .game-ss-title h3 {
     font-weight: 900;
     font-size: var(--font-large);
+    color: var(--font-contrary);
 }
 
 .game-ss-content {
@@ -1316,7 +1324,7 @@ main h2 {
     gap: .9375rem;
     height: var(--footer-heigth);
     padding: .9375rem var(--lateral-width);
-    border-top: solid thin var(--back-contrast);
+    border-top: solid thin var(--back-contrast2);
     background-color: var(--back-principal);
     color: var(--font);
 }

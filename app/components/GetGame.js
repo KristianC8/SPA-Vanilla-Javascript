@@ -229,7 +229,6 @@ export function GetGame() {
 <h3 class="description-title">${name}</h3>
 
 <div class="game-description">
-  <div class="game-background"></div>
   <div class="description-features">
     <img class="description-category" src="${esrb_img}" alt="${!esrb_rating ? 'Pending' : esrb_rating.name}" title="${!esrb_rating ? 'Pending' : esrb_rating.name}">
     <span>▪</span>
