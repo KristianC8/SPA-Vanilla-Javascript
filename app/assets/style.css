@@ -943,6 +943,7 @@ main h2 {
     margin-bottom: .625rem;
     font-weight: 500;
     text-wrap: pretty;
+    font-size: var(--font-medium);
 }
 
 .game-data {
@@ -1609,6 +1610,7 @@ main h2 {
     :root {
         --lateral-width: 2.5rem;
         --screenshot-heigth: 12.5rem;
+        --font-ultra-large: 1.25rem;
     }
 
     .header {
