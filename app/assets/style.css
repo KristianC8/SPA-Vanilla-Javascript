@@ -9,7 +9,7 @@
     --lateral-width: 3.75rem;
     --line-heigth-title-section: 1rem;
     --space-between: .9375rem;
-    --screenshot-heigth: 7.5rem;
+    --screenshot-heigth: 8.75rem;
 
 
     --principal: #2643FF;
@@ -1114,8 +1114,10 @@ main h2 {
     position: fixed;
     /* top: calc((--header-heigth) + 3.125rem); */
     top: var(--header-heigth);
-    left: var(--lateral-width);
-    right: var(--lateral-width);
+    /* left: var(--lateral-width); */
+    left: 0;
+    /* right: var(--lateral-width); */
+    right: 0;
     bottom: 0;
     backdrop-filter: blur(.625rem);
     /*ojo*/
@@ -1127,7 +1129,7 @@ main h2 {
 
 .popup-ss-container {
     position: relative;
-    width: 78%;
+    width: 65%;
 }
 
 .popup-ss-slider {
