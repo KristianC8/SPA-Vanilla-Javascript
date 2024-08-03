@@ -487,6 +487,7 @@ main h2 {
     font-weight: 900;
     border-radius: .625rem;
     background-color: var(--principal-transparent);
+    font-size: var(--font-medium);
 }
 
 .card-note-1 {
@@ -544,6 +545,7 @@ main h2 {
     width: 80%;
     color: var(--font-contrary);
     font-weight: 900;
+    font-size: var(--font-medium);
 }
 
 .card-note {
