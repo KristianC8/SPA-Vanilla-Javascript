@@ -1,15 +1,15 @@
 :root {
-    --font-small: 12rem;
-    --font-medium: 14rem;
-    --font-large: 16rem;
-    --font-extra-large: 20rem;
-    --font-ultra-large: 30rem;
-    --header-heigth: 55rem;
-    --footer-heigth: 180rem;
-    --lateral-width: 60rem;
-    --line-heigth-title-section: 16rem;
-    --space-between: 15rem;
-    --screenshot-heigth: 120rem;
+    --font-small: .75rem;
+    --font-medium: .875rem;
+    --font-large: 1rem;
+    --font-extra-large: 1.25rem;
+    --font-ultra-large: 1.875rem;
+    --header-heigth: 3.4375rem;
+    --footer-heigth: 11.25rem;
+    --lateral-width: 3.75rem;
+    --line-heigth-title-section: 1rem;
+    --space-between: .9375rem;
+    --screenshot-heigth: 7.5rem;
 
 
     --principal: #2643FF;
@@ -64,17 +64,17 @@
 /* @media(prefers-color-scheme: dark) {} */
 
 :root[data-theme="dark"] {
-    /* --font-small: 12rem;
-    --font-medium: 14rem;
-    --font-large: 16rem;
-    --font-extra-large: 20rem;
-    --font-ultra-large: 30rem;
-    --header-heigth: 55rem;
-    --footer-heigth: 180rem;
-    --lateral-width: 60rem;
-    --line-heigth-title-section: 16rem;
-    --space-between: 15rem;
-    --screenshot-heigth: 120rem; */
+    /* --font-small: .75rem;
+    --font-medium: .875rem;
+    --font-large: 1rem;
+    --font-extra-large: 1.25rem;
+    --font-ultra-large: 1.875rem;
+    --header-heigth: 3.4375rem;
+    --footer-heigth: 11.25rem;
+    --lateral-width: 3.75rem;
+    --line-heigth-title-section: 1rem;
+    --space-between: .9375rem;
+    --screenshot-heigth: 7.5rem; */
 
     --principal: #09de5a;
     --principal-transparent: rgb(9, 222, 90, .85);
@@ -143,7 +143,7 @@ html {
 }
 
 *::-webkit-scrollbar:vertical {
-    width: 17rem;
+    width: 1.0625rem;
 }
 
 *::-webkit-scrollbar-button:increment,
@@ -153,8 +153,8 @@ html {
 
 *::-webkit-scrollbar-thumb {
     background-color: var(--back-contrast);
-    border-radius: 5rem;
-    border: 2rem solid var(--back-principal);
+    border-radius: .3125rem;
+    border: .125rem solid var(--back-principal);
 }
 
 *::-webkit-scrollbar-track {
@@ -163,7 +163,7 @@ html {
 }
 
 body {
-    min-width: 320rem;
+    min-width: 20rem;
     background-color: var(--back-principal);
 
 }
@@ -171,18 +171,18 @@ body {
 .loader {
     display: block;
     margin: 0 auto;
-    height: 60rem;
-    width: 80rem;
+    height: 3.75rem;
+    width: 5rem;
     /*Momentaneo*/
-    margin-top: 55rem;
+    margin-top: 3.4375rem;
     /* scroll-margin-top: 55px; */
 }
 
 .error {
-    padding: 16rem;
+    padding: 1rem;
     text-align: center;
     font-weight: 700;
-    border-radius: 10rem;
+    border-radius: .625rem;
     color: var(--font-clear-ever);
     background-color: var(--back-error);
 }
@@ -198,25 +198,25 @@ body {
     align-items: center;
     justify-content: space-between;
     height: var(--header-heigth);
-    padding: 0 24rem;
+    padding: 0 1.5rem;
     background-color: var(--back-principal);
     border-bottom: thin solid var(--back-contrast);
     background-image: var(--auth-logo);
     background-repeat: no-repeat;
-    background-position: calc(100vw - 115rem) calc((var(--header-heigth) - 25rem) * (-1));
+    background-position: calc(100vw - 7.1875rem) calc((var(--header-heigth) - 1.5625rem) * (-1));
     background-size: 8%;
     z-index: 2;
 }
 
 .header-logo-name {
     display: flex;
-    gap: 5rem;
+    gap: .3125rem;
     align-items: center;
 }
 
 .header-logo {
-    height: 35rem;
-    width: 60rem;
+    height: 2.1875rem;
+    width: 3.75rem;
     background-image: var(--Logo);
     background-repeat: no-repeat;
     background-position: center;
@@ -224,8 +224,8 @@ body {
 }
 
 .header-name {
-    height: 35rem;
-    width: 210rem;
+    height: 2.1875rem;
+    width: 13.125rem;
     background-image: var(--name-site);
     background-repeat: no-repeat;
     background-position: center;
@@ -242,13 +242,13 @@ body {
 }
 
 .header-input-search {
-    height: 35rem;
+    height: 2.1875rem;
     width: 100%;
-    padding: 0 10rem 0 38rem;
+    padding: 0 .625rem 0 2.375rem;
     font-size: var(--font-small);
     font-weight: 700;
     color: var(--font);
-    border-radius: 8rem;
+    border-radius: .5rem;
     border: none;
     outline-color: var(--principal);
     background-color: var(--back-contrast);
@@ -258,13 +258,13 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 35rem;
-    width: 35rem;
+    height: 2.1875rem;
+    width: 2.1875rem;
     background-image: var(--loupe);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
-    border-radius: 8rem 0 0 8rem;
+    border-radius: .5rem 0 0 .5rem;
 }
 
 .header-input-search::placeholder {
@@ -279,15 +279,15 @@ body {
 }
 
 .header-btn-theme {
-    height: 35rem;
-    width: 25rem;
+    height: 2.1875rem;
+    width: 1.5625rem;
     border: none;
     background: none;
     background-image: var(--theme-logo);
     background-repeat: no-repeat;
     background-position: center;
     /* background-size: 50%; */
-    border-radius: 5rem;
+    border-radius: .3125rem;
     transition: .2s ease;
 }
 
@@ -300,13 +300,13 @@ body {
 .sidebar-menu {
     position: fixed;
     top: 50vh;
-    left: calc((var(--lateral-width) - 35rem) / 2);
-    width: 35rem;
-    padding: 4rem;
-    border-radius: 8rem;
-    transform: translate(0, -77.5rem);
+    left: calc((var(--lateral-width) - 2.1875rem) / 2);
+    width: 2.1875rem;
+    padding: .25rem;
+    border-radius: .5rem;
+    transform: translate(0, -4.84375rem);
     overflow-x: hidden;
-    border: solid 1rem var(--back-contrast);
+    border: solid thin var(--back-contrast);
     background-color: var(--back-principal);
     transition: .4s ease;
     visibility: visible;
@@ -315,22 +315,22 @@ body {
 }
 
 .open-sidebar-menu {
-    width: 145rem;
+    width: 9.0625rem;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 15rem;
+    gap: .9375rem;
     height: 100%;
     width: 100%;
 }
 
 .option-menu {
     display: flex;
-    gap: 10rem;
+    gap: .625rem;
     text-decoration: none;
-    border-radius: 5rem;
+    border-radius: .3125rem;
     transition: .2s;
 }
 
@@ -340,9 +340,9 @@ body {
 }
 
 .menu-btn {
-    height: 25rem;
-    width: 25rem;
-    border-radius: 5rem;
+    height: 1.5625rem;
+    width: 1.5625rem;
+    border-radius: .3125rem;
     border: none;
     background-color: var(--back-btnMenu);
     background-image: var(--sideMenu);
@@ -356,9 +356,9 @@ body {
 }
 
 .option-menu-img {
-    height: 25rem;
-    min-width: 25rem;
-    border-radius: 5rem;
+    height: 1.5625rem;
+    min-width: 1.5625rem;
+    border-radius: .3125rem;
     background-color: var(--principal);
     background-position: center;
     background-repeat: no-repeat;
@@ -399,7 +399,7 @@ body {
 }
 
 .main-open-menu {
-    margin: var(--header-heigth) 0 0 165rem;
+    margin: var(--header-heigth) 0 0 10.3125rem;
 }
 
 .main-mobile-search-container {
@@ -418,29 +418,29 @@ main h2 {
 .home-games {
     display: flex;
     flex-wrap: wrap;
-    gap: 15rem;
-    min-width: 320rem;
-    padding: 20rem 0;
+    gap: .9375rem;
+    min-width: 20rem;
+    padding: 1.25rem 0;
     min-height: calc(100vh - var(--header-heigth));
 }
 
 .home-best-games {
     flex-grow: 1;
-    min-width: 550rem;
-    width: calc(60% - 10rem);
+    min-width: 34.375rem;
+    width: calc(60% - .625rem);
     line-height: var(--line-heigth-title-section);
 }
 
 .home-grid-games {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15rem;
+    gap: .9375rem;
 }
 
 /* /////////////////////// Cards ///////////////////////*/
 
 .cards {
-    border-radius: 10rem;
+    border-radius: .625rem;
     -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
@@ -450,8 +450,8 @@ main h2 {
 .card-1 {
     position: relative;
     grid-area: 1/1/2/3;
-    min-height: 200rem;
-    height: calc(((100vh - var(--header-heigth) - var(--line-heigth-title-section) - var(--space-between) - 55rem) / 2));
+    min-height: 12.5rem;
+    height: calc(((100vh - var(--header-heigth) - var(--line-heigth-title-section) - var(--space-between) - 3.4375rem) / 2));
     overflow: hidden;
 }
 
@@ -459,7 +459,7 @@ main h2 {
     display: block;
     width: 100%;
     height: 100%;
-    border-radius: 10rem;
+    border-radius: .625rem;
     object-fit: cover;
     object-position: center;
     transition: 1s ease;
@@ -472,33 +472,33 @@ main h2 {
 
 .card-name-1 {
     position: absolute;
-    bottom: 15rem;
-    left: 15rem;
-    padding: 5rem 10rem;
+    bottom: .9375rem;
+    left: .9375rem;
+    padding: .3125rem .625rem;
     color: var(--font-contrary);
     font-weight: 900;
-    border-radius: 10rem;
+    border-radius: .625rem;
     background-color: var(--principal-transparent);
 }
 
 .card-note-1 {
     position: absolute;
-    top: 15rem;
-    right: 15rem;
-    border-radius: 10rem;
-    padding: 10rem;
+    top: .9375rem;
+    right: .9375rem;
+    border-radius: .625rem;
+    padding: .625rem;
     color: var(--excellent);
     font-size: var(--font-extra-large);
     font-weight: 900;
     background-color: var(--excellent-tranparent);
-    border: 4rem solid var(--excellent);
+    border: .25rem solid var(--excellent);
 }
 
 .home-cards {
     position: relative;
     /* background-color: #e7e7e7; */
-    min-height: 200rem;
-    height: calc(((100vh - var(--header-heigth) - var(--line-heigth-title-section) - var(--space-between) - 55rem) / 2));
+    min-height: 12.5rem;
+    height: calc(((100vh - var(--header-heigth) - var(--line-heigth-title-section) - var(--space-between) - 3.4375rem) / 2));
     overflow: hidden;
 }
 
@@ -506,7 +506,7 @@ main h2 {
     display: block;
     width: 100%;
     height: 100%;
-    border-radius: 10rem 10rem;
+    border-radius: .625rem .625rem;
     object-fit: cover;
     object-position: center;
     transition: 1s ease;
@@ -527,8 +527,8 @@ main h2 {
     left: 0;
     right: 0;
     height: 20%;
-    padding: 10rem 20rem;
-    border-radius: 0 0 10rem 10rem;
+    padding: .625rem 1.25rem;
+    border-radius: 0 0 .625rem .625rem;
     background-color: var(--principal-transparent);
 }
 
@@ -539,9 +539,10 @@ main h2 {
 }
 
 .card-note {
-    height: 28rem;
-    padding: 4rem 5rem 5rem 5rem;
-    border-radius: 10rem;
+    height: 1.75rem;
+    /*28px*/
+    padding: .25rem .3125rem .3125rem .3125rem;
+    border-radius: .625rem;
     font-size: var(--font-medium);
     font-weight: 900;
 }
@@ -549,25 +550,25 @@ main h2 {
 .card-note-good {
     color: var(--excellent);
     background-color: var(--excellent-tranparent);
-    border: 2rem solid var(--excellent);
+    border: .125rem solid var(--excellent);
 }
 
 .card-note-medium {
     color: var(--acceptable);
     background-color: var(--acceptable-transparent);
-    border: 2rem solid var(--acceptable);
+    border: .125rem solid var(--acceptable);
 }
 
 .card-note-bad {
     color: var(--poor);
     background-color: var(--poor-transparent);
-    border: 2rem solid var(--poor);
+    border: .125rem solid var(--poor);
 }
 
 .home-trailers {
     flex-grow: 1;
-    min-width: 300rem;
-    width: calc(40% - 10rem);
+    min-width: 18.75rem;
+    width: calc(40% - .625rem);
     line-height: var(--line-heigth-title-section);
 }
 
@@ -576,14 +577,14 @@ main h2 {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 430rem;
-    height: calc(100% - 30rem);
-    border-radius: 10rem;
+    min-height: 26.875rem;
+    height: calc(100% - 1.875rem);
+    border-radius: .625rem;
     background-color: var(--back-contrast);
 }
 
 .trailer {
-    border-radius: 10rem;
+    border-radius: .625rem;
 }
 
 /* /////////////////////// Mobile Menu ///////////////////////*/
@@ -594,7 +595,7 @@ main h2 {
     bottom: 0;
     right: 0;
     left: 0;
-    padding: var(--header-heigth) var(--lateral-width) 20rem var(--lateral-width);
+    padding: var(--header-heigth) var(--lateral-width) 1.25rem var(--lateral-width);
     overflow-y: auto;
     display: none;
     justify-content: center;
@@ -611,14 +612,14 @@ main h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60rem;
-    margin-bottom: 5rem;
-    padding: 0 10rem;
-    border-radius: 8rem;
+    height: 3.75rem;
+    margin-bottom: .3125rem;
+    padding: 0 .625rem;
+    border-radius: .5rem;
     color: var(--font);
     text-decoration: none;
     font-weight: 900;
-    font-size: 20rem;
+    font-size: 1.25rem;
     transition: ease 1s;
 }
 
@@ -630,13 +631,13 @@ main h2 {
 .btn-mobile-menu {
     visibility: hidden;
     position: fixed;
-    height: 48rem;
-    width: 48rem;
+    height: 3rem;
+    width: 3rem;
     z-index: 2;
-    bottom: 10rem;
-    right: 10rem;
-    border-radius: 12rem;
-    border: solid 2rem var(--back-contrast);
+    bottom: .625rem;
+    right: .625rem;
+    border-radius: .75rem;
+    border: solid .125rem var(--back-contrast);
     background-image: var(--mobileMenu);
     background-repeat: no-repeat;
     background-position: center;
@@ -647,18 +648,18 @@ main h2 {
 /* /////////////////////// Games ///////////////////////*/
 
 .games {
-    padding: 20rem 0;
+    padding: 1.25rem 0;
 }
 
 .games-grid {
     /* background-color: var(--back-contrast); */
     background-color: var(--back-principal);
-    padding: 20rem 0;
+    padding: 1.25rem 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 350rem);
-    gap: 20rem;
+    grid-template-columns: repeat(auto-fill, 21.875rem);
+    gap: 1.25rem;
     place-content: center;
-    border-radius: 10rem;
+    border-radius: .625rem;
 }
 
 /* /////////////////////// Games Filter///////////////////////*/
@@ -667,9 +668,9 @@ main h2 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 20rem;
-    padding: 0 20rem;
-    margin-bottom: 20rem;
+    gap: 1.25rem;
+    padding: 0 1.25rem;
+    margin-bottom: 1.25rem;
     font-weight: 700;
 }
 
@@ -678,25 +679,25 @@ main h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 5rem;
-    padding: 0 5rem;
-    min-width: 200rem;
+    gap: .3125rem;
+    padding: 0 .3125rem;
+    min-width: 12.5rem;
     width: 20%;
-    border-radius: 10rem;
+    border-radius: .625rem;
     color: var(--font);
     background-color: var(--back-contrast);
 }
 
 .isOpenSelect {
-    border-radius: 10rem 10rem 0 0;
+    border-radius: .625rem .625rem 0 0;
 }
 
 .select-selected {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    gap: 10rem;
-    padding: 5rem;
+    gap: .625rem;
+    padding: .3125rem;
 }
 
 .selected-name {
@@ -710,7 +711,7 @@ main h2 {
 }
 
 .list-items li {
-    padding: 5rem 20rem 5rem 25%;
+    padding: .3125rem 1.25rem .3125rem 25%;
     font-weight: 500;
     transition: all .5s ease;
 }
@@ -720,12 +721,12 @@ main h2 {
 }
 
 .select-items {
-    top: 27rem;
+    top: 1.6875rem;
     left: 0;
     right: 0;
     position: absolute;
     background-color: var(--back-principal);
-    border-radius: 0 0 10rem 10rem;
+    border-radius: 0 0 .625rem .625rem;
     border: solid thin var(--back-contrast);
     z-index: 1;
     transition: all .5s ease;
@@ -739,7 +740,7 @@ main h2 {
     background-position: center;
     background-color: var(--back-contrast);
     height: 100%;
-    width: 20rem;
+    width: 1.25rem;
 }
 
 /* /////////////////////// Inactive ///////////////////////*/
@@ -751,22 +752,22 @@ main h2 {
 /* /////////////////////// Platforms ///////////////////////*/
 
 .platforms {
-    padding: 20rem 0;
+    padding: 1.25rem 0;
     min-height: calc(100vh - var(--footer-heigth) - var(--header-heigth));
 }
 
 .platforms-grid {
-    padding: 20rem 0;
+    padding: 1.25rem 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300rem);
-    gap: 20rem;
+    grid-template-columns: repeat(auto-fill, 18.75rem);
+    gap: 1.25rem;
     place-content: center;
-    border-radius: 10rem;
+    border-radius: .625rem;
 }
 
 .platform-card {
-    border-radius: 10rem;
-    padding: 20rem;
+    border-radius: .625rem;
+    padding: 1.25rem;
     -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
@@ -775,8 +776,8 @@ main h2 {
 
 .platform-img {
     display: block;
-    padding: 10rem 0;
-    height: 100rem;
+    padding: .625rem 0;
+    height: 6.25rem;
     width: 100%;
     object-fit: contain;
 }
@@ -790,7 +791,7 @@ main h2 {
 
 .platform-description {
     font-size: var(--font-small);
-    padding: 10rem;
+    padding: .625rem;
     text-wrap: pretty;
     color: var(--font);
 
@@ -802,18 +803,18 @@ main h2 {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap: 15rem;
-    min-width: 250rem;
-    padding: 20rem 0;
+    gap: .9375rem;
+    min-width: 15.625rem;
+    padding: 1.25rem 0;
     /* min-height: calc(100vh - var(--header-heigth)); */
 }
 
 .game {
     position: relative;
     flex-grow: 1;
-    min-width: 550rem;
-    width: calc(80% - 10rem);
-    border-radius: 10rem;
+    min-width: 34.375rem;
+    width: calc(80% - .625rem);
+    border-radius: .625rem;
     border: thin solid var(--back-contrast);
     -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
@@ -830,18 +831,18 @@ main h2 {
     display: grid;
     place-items: center;
     place-content: center;
-    width: 80rem;
-    height: 80rem;
-    top: 40rem;
-    left: 40rem;
+    width: 5rem;
+    height: 5rem;
+    top: 2.5rem;
+    left: 2.5rem;
     border-radius: 50%;
     font-size: var(--font-extra-large);
     font-weight: 900;
-    border: 6rem solid;
+    border: .375rem solid;
 }
 
 .game-metacritic {
-    font-size: 8rem;
+    font-size: .5rem;
     font-weight: 900;
 }
 
@@ -850,18 +851,18 @@ main h2 {
     width: 100%;
     object-fit: cover;
     object-position: center;
-    min-height: 300rem;
+    min-height: 18.75rem;
     height: calc((100vh - var(--header-heigth)) * 0.8);
-    border-radius: 10rem 10rem 0 0;
+    border-radius: .625rem .625rem 0 0;
     aspect-ratio: 16/9;
 }
 
 .game-description {
     position: relative;
-    padding: 10rem;
-    min-width: 200rem;
+    padding: .625rem;
+    min-width: 12.5rem;
     width: 100%;
-    padding: 10rem 80rem 30rem 60rem;
+    padding: .625rem 5rem 1.875rem 3.75rem;
     color: var(--font);
     font-weight: 900;
     background-color: var(--back-principal);
@@ -871,35 +872,36 @@ main h2 {
     position: absolute;
     top: 0;
     left: 0;
-    height: 40rem;
+    height: 2.5rem;
     width: 100vw;
-    transform: translate(-30rem, -30rem);
-    /* min-height: 100rem; */
-    border-radius: 0 0 10rem 10rem;
+    transform: translate(-1.875rem, -1.875rem);
+    /* min-height: 6.25rem; */
+    border-radius: 0 0 .625rem .625rem;
     /* background: rgb(231, 231, 231, .9); */
     background: var(--game-division);
-    filter: blur(5rem);
+    filter: blur(.3125rem);
+    /*5pc*/
 }
 
 .description-title {
     position: absolute;
-    top: calc(((100vh - var(--header-heigth)) * 0.8) - 90rem);
-    padding: 5rem 10rem;
-    border-radius: 10rem;
-    left: 40rem;
+    top: calc(((100vh - var(--header-heigth)) * 0.8) - 5.625rem);
+    padding: .3125rem .625rem;
+    border-radius: .625rem;
+    left: 2.5rem;
     color: var(--font-clear-ever);
     font-size: var(--font-ultra-large);
-    backdrop-filter: blur(5rem);
+    backdrop-filter: blur(.3125rem);
     background-color: var(--back-dark-transparent);
 }
 
 .description-features {
-    height: 30rem;
+    height: 1.875rem;
     width: fit-content;
     display: flex;
     align-items: center;
-    gap: 20rem;
-    margin-bottom: 15rem;
+    gap: 1.25rem;
+    margin-bottom: .9375rem;
 }
 
 .description-category {
@@ -910,7 +912,7 @@ main h2 {
     height: 100%;
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: .3125rem;
 }
 
 .description-platform {
@@ -925,11 +927,11 @@ main h2 {
 }
 
 .description-text {
-    margin-bottom: 15rem;
+    margin-bottom: .9375rem;
 }
 
 .description-text p {
-    margin-bottom: 10rem;
+    margin-bottom: .625rem;
     font-weight: 500;
     text-wrap: pretty;
 }
@@ -943,7 +945,7 @@ main h2 {
 
 .game-data h4 {
     font-weight: 900;
-    margin-bottom: 5rem;
+    margin-bottom: .3125rem;
 }
 
 .game-data div {
@@ -951,28 +953,28 @@ main h2 {
 }
 
 .game-data-developers {
-    max-width: 300rem;
-    margin-bottom: 15rem;
+    max-width: 18.75rem;
+    margin-bottom: .9375rem;
 }
 
 .game-data-developer {
-    padding: 0 5rem;
+    padding: 0 .3125rem;
     border: thin solid var(--back-contrast);
-    border-radius: 5rem;
+    border-radius: .3125rem;
     -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
 .game-data-genres {
-    max-width: 300rem;
-    margin-bottom: 15rem;
+    max-width: 18.75rem;
+    margin-bottom: .9375rem;
 }
 
 .game-data-genre {
-    padding: 0 5rem;
+    padding: 0 .3125rem;
     border: thin solid var(--back-contrast);
-    border-radius: 5rem;
+    border-radius: .3125rem;
     -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
@@ -985,10 +987,10 @@ main h2 {
 }
 
 .data-website-img {
-    height: 40rem;
-    width: 80rem;
-    border-left: solid 5rem var(--principal);
-    border-bottom: solid 5rem var(--principal);
+    height: 2.5rem;
+    width: 5rem;
+    border-left: solid .3125rem var(--principal);
+    border-bottom: solid .3125rem var(--principal);
     border-top: none;
     border-right: none;
     background-color: var(--principal-transparent);
@@ -996,7 +998,7 @@ main h2 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20%;
-    border-radius: 10rem;
+    border-radius: .625rem;
     cursor: pointer;
 }
 
@@ -1005,10 +1007,10 @@ main h2 {
 .game-screenshots {
     position: relative;
     flex-grow: 1;
-    min-width: 200rem;
-    width: calc(20% - 10rem);
+    min-width: 12.5rem;
+    width: calc(20% - .625rem);
     line-height: var(--line-heigth-title-section);
-    padding: 0 0 30rem 0;
+    padding: 0 0 1.875rem 0;
     color: var(--font);
 }
 
@@ -1029,16 +1031,16 @@ main h2 {
     width: calc(100% + 30%);
     left: -30%;
     top: 4%;
-    padding: 0 40rem;
+    padding: 0 2.5rem;
     background-color: var(--back-contrast);
-    border-radius: 10rem;
+    border-radius: .625rem;
     -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
 .game-ss-title {
-    padding: 20rem 10rem;
+    padding: 1.25rem .625rem;
 }
 
 .game-ss-title h3 {
@@ -1048,14 +1050,16 @@ main h2 {
 
 .game-ss-content {
     width: 100%;
-    max-height: calc(20rem + (var(--screenshot-heigth) * 3));
+    /* max-height: calc(20rem + (var(--screenshot-heigth) * 3)); ojo */
+    max-height: calc(1.25rem + (var(--screenshot-heigth) * 3));
+    /*ojo*/
     overflow: hidden;
 }
 
 .game-ss-bigcontent {
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: .625rem;
     width: 100%;
     transition: all .5s ease;
 }
@@ -1065,7 +1069,7 @@ main h2 {
 }
 
 .game-ss-more {
-    min-height: 40rem;
+    min-height: 2.5rem;
 }
 
 .game-screenshot {
@@ -1074,15 +1078,15 @@ main h2 {
     width: 100%;
     min-height: var(--screenshot-heigth);
     height: var(--screenshot-heigth);
-    border-radius: 10rem;
+    border-radius: .625rem;
     cursor: pointer;
 }
 
 .game-ss-btn {
     position: absolute;
     right: 0;
-    height: 40rem;
-    width: 40rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border: none;
     background-color: var(--back-contrast);
     background-repeat: no-repeat;
@@ -1092,12 +1096,12 @@ main h2 {
 }
 
 .game-ss-nextbtn {
-    top: calc(50% + 30rem);
+    top: calc(50% + 1.875rem);
     background-image: var(--arrow-down);
 }
 
 .game-ss-prevbtn {
-    top: calc(50% - 30rem);
+    top: calc(50% - 1.875rem);
     background-image: var(--arrow-up);
 }
 
@@ -1108,14 +1112,15 @@ main h2 {
     justify-content: center;
     align-items: start;
     position: fixed;
-    /* top: calc((--header-heigth) + 50rem); */
+    /* top: calc((--header-heigth) + 3.125rem); */
     top: var(--header-heigth);
     left: var(--lateral-width);
     right: var(--lateral-width);
     bottom: 0;
-    backdrop-filter: blur(10rem);
+    backdrop-filter: blur(.625rem);
+    /*ojo*/
     background-color: var(--back-popup);
-    padding: 60rem 70rem;
+    padding: 3.75rem 4.375rem;
     /* z-index: 1; */
 
 }
@@ -1126,15 +1131,15 @@ main h2 {
 }
 
 .popup-ss-slider {
-    border-radius: 10rem;
+    border-radius: .625rem;
     overflow: hidden;
 }
 
 .popup-ss-btn {
     position: absolute;
-    top: calc(50% - 25rem);
-    height: 50rem;
-    width: 30rem;
+    top: calc(50% - 1.5625rem);
+    height: 3.125rem;
+    width: 1.875rem;
     border: none;
     background-repeat: no-repeat;
     background-position: center;
@@ -1144,24 +1149,24 @@ main h2 {
 }
 
 .popup-ss-prevbtn {
-    left: -45rem;
+    left: -2.8125rem;
     background-image: var(--arrow-left);
 
 }
 
 .popup-ss-nextbtn {
-    right: -45rem;
+    right: -2.8125rem;
     background-image: var(--arrow-rigth);
 }
 
 .popup-ss-close {
     position: absolute;
     display: block;
-    height: 35rem;
-    width: 35rem;
-    padding: 2rem;
-    top: -40rem;
-    right: calc(50% - 15rem);
+    height: 2.1875rem;
+    width: 2.1875rem;
+    padding: .125rem;
+    top: -2.5rem;
+    right: calc(50% - .9375rem);
     border-radius: 50%;
     font-size: var(--font-ultra-large);
     cursor: pointer;
@@ -1182,7 +1187,7 @@ main h2 {
     display: block;
     min-width: 100%;
     width: 100%;
-    border-radius: 10rem;
+    border-radius: .625rem;
     object-fit: cover;
     object-position: center;
     aspect-ratio: 16/9;
@@ -1191,25 +1196,25 @@ main h2 {
 /* /////////////////////// Results Search//////////////////////////*/
 
 .results {
-    padding: 20rem 0;
+    padding: 1.25rem 0;
 }
 
 .results-grid {
     display: grid;
-    gap: 10rem;
+    gap: .625rem;
     width: 80%;
     margin: 0 auto;
     place-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(250rem, 400rem));
+    grid-template-columns: repeat(auto-fill, minmax(15.625rem, 25rem));
 }
 
 .result-card {
     display: flex;
-    gap: 20rem;
+    gap: 1.25rem;
     align-items: center;
-    padding: 10rem 40rem;
-    /* margin: 0 0 10rem 0; */
-    border-radius: 10rem;
+    padding: .625rem 2.5rem;
+    /* margin: 0 0 .625rem 0; */
+    border-radius: .625rem;
     background-color: var(--back-contrast);
     -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
@@ -1219,17 +1224,17 @@ main h2 {
 
 .result-img {
     display: block;
-    width: 140rem;
-    height: 80rem;
-    border-radius: 5rem;
+    width: 8.75rem;
+    height: 5rem;
+    border-radius: .3125rem;
     /* background-color: var(--back-dark); */
 }
 
 .results-notfound {
     margin: 0 auto;
     background-color: var(--back-error);
-    padding: 10rem;
-    border-radius: 10rem;
+    padding: .625rem;
+    border-radius: .625rem;
     font-weight: 900;
     color: var(--font-contrary);
     text-align: center;
@@ -1238,8 +1243,8 @@ main h2 {
 .results-white {
     margin: 0 auto;
     background-color: var(--back-contrast);
-    padding: 10rem;
-    border-radius: 10rem;
+    padding: .625rem;
+    border-radius: .625rem;
     font-weight: 900;
     color: var(--font);
     text-align: center;
@@ -1260,40 +1265,40 @@ main h2 {
 .apiLink {
     position: relative;
     display: block;
-    padding: 10rem;
-    border-radius: 10rem;
+    padding: .625rem;
+    border-radius: .625rem;
     font-weight: 700;
     color: var(--font-contrary);
-    border-left: solid 5rem var(--principal);
-    border-bottom: solid 5rem var(--principal);
+    border-left: solid .3125rem var(--principal);
+    border-bottom: solid .3125rem var(--principal);
     background-color: var(--principal-transparent);
     text-decoration: none;
 }
 
 .apiLink-home {
-    min-width: 250rem;
+    min-width: 15.625rem;
     width: 57%;
-    margin: 0 auto 20rem auto;
+    margin: 0 auto 1.25rem auto;
     text-align: center;
 }
 
 .apiLink-game {
-    max-width: 300rem;
+    max-width: 18.75rem;
 }
 
 .apiLink-games {
     width: 61%;
-    margin: 20rem auto;
+    margin: 1.25rem auto;
     text-align: center;
-    padding: 8rem;
+    padding: .5rem;
 }
 
 .api-imgclick {
     position: absolute;
-    bottom: -18rem;
-    right: -10rem;
-    height: 50rem;
-    width: 50rem;
+    bottom: -1.125rem;
+    right: -.625rem;
+    height: 3.125rem;
+    width: 3.125rem;
     background-image: var(--cursor);
     background-repeat: no-repeat;
     background-position: center;
@@ -1306,9 +1311,9 @@ main h2 {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 15rem;
+    gap: .9375rem;
     height: var(--footer-heigth);
-    padding: 15rem var(--lateral-width);
+    padding: .9375rem var(--lateral-width);
     border-top: solid thin var(--back-contrast);
     background-color: var(--back-principal);
     color: var(--font);
@@ -1318,14 +1323,14 @@ main h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    gap: .3125rem;
 }
 
 .footer-developedby-back {
-    width: 60rem;
-    height: 60rem;
+    width: 3.75rem;
+    height: 3.75rem;
     /* border: solid thin var(--back-btnMenu); */
-    /* border-radius: 10rem; */
+    /* border-radius: .625rem; */
     /* background-image: linear-gradient(180deg,
             hsl(0deg 0% 78%) 0%,
             hsl(0deg 0% 80%) 0%,
@@ -1347,7 +1352,7 @@ main h2 {
     width: 100%;
     object-position: center;
     object-fit: cover;
-    /* padding: 4rem 4rem 0 4rem; */
+    /* padding: .25rem .25rem 0 .25rem; */
 }
 
 .footer-developedby-name {
@@ -1356,12 +1361,12 @@ main h2 {
 
 .footer-socialMedia {
     display: flex;
-    gap: 10rem
+    gap: .625rem
 }
 
 .foot-social {
-    height: 20rem;
-    width: 20rem;
+    height: 1.25rem;
+    width: 1.25rem;
 }
 
 .foot-social {
@@ -1384,15 +1389,15 @@ main h2 {
 
 @media screen and (min-width: 1400px) {
     :root {
-        --header-heigth: 70rem;
-        --lateral-width: 70rem;
-        --font-small: 14rem;
-        --font-medium: 16rem;
-        --font-large: 18rem;
-        --font-extra-large: 30rem;
-        --font-ultra-large: 35rem;
-        --line-heigth-title-section: 18rem;
-        --screenshot-heigth: 200rem;
+        --header-heigth: 4.375rem;
+        --lateral-width: 4.375rem;
+        --font-small: .875rem;
+        --font-medium: 1rem;
+        --font-large: 1.125rem;
+        --font-extra-large: 1.875rem;
+        --font-ultra-large: 2.1875rem;
+        --line-heigth-title-section: 1.125rem;
+        --screenshot-heigth: 12.5rem;
     }
 
     .option-menu-text {
@@ -1404,41 +1409,41 @@ main h2 {
     }
 
     .card-note {
-        height: 30rem;
+        height: 1.875rem;
     }
 
     .games-grid {
-        grid-template-columns: repeat(auto-fill, 550rem);
+        grid-template-columns: repeat(auto-fill, 34.375rem);
     }
 
     .game-metascore {
 
-        width: 100rem;
-        height: 100rem;
+        width: 6.25rem;
+        height: 6.25rem;
     }
 
     .game-metacritic {
-        font-size: 10rem;
+        font-size: .625rem;
     }
 
     .game-description {
-        padding: 10rem 150rem 30rem 90rem;
+        padding: .625rem 9.375rem 1.875rem 5.625rem;
     }
 
     .data-website-img {
-        height: 60rem;
-        width: 120rem;
+        height: 3.75rem;
+        width: 7.5rem;
     }
 
     .popup-ss-grid {
-        padding: 120rem;
+        padding: 7.5rem;
     }
 
     .popup-ss-close {
-        height: 50rem;
-        width: 50rem;
-        right: calc(50% - 25rem);
-        top: -65rem;
+        height: 3.125rem;
+        width: 3.125rem;
+        right: calc(50% - 1.5625rem);
+        top: -4.0625rem;
     }
 
     .api-imgclick {
@@ -1457,13 +1462,13 @@ main h2 {
         display: block;
         position: relative;
         width: 100%;
-        padding: 0 30rem;
+        padding: 0 1.875rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         background-color: var(--back-contrast);
-        border-radius: 10rem;
+        border-radius: .625rem;
         -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
@@ -1499,17 +1504,17 @@ main h2 {
         height: auto;
         display: block;
         /* background-color: var(--back-dark); */
-        border-radius: 10rem;
+        border-radius: .625rem;
     }
 
     .game-description {
-        padding: 10rem 60rem 30rem 60rem;
+        padding: .625rem 3.75rem 1.875rem 3.75rem;
     }
 
     .game-ss-btnM {
         position: absolute;
-        height: 40rem;
-        width: 40rem;
+        height: 2.5rem;
+        width: 2.5rem;
         border: none;
         background-color: var(--back-contrast);
         top: auto;
@@ -1520,13 +1525,13 @@ main h2 {
     }
 
     .game-ss-nextbtnM {
-        right: calc(50% - 50rem);
+        right: calc(50% - 3.125rem);
         background-image: var(--arrow-rigth);
         background-size: 40%;
     }
 
     .game-ss-prevbtnM {
-        right: calc(50% + 10rem);
+        right: calc(50% + .625rem);
         background-image: var(--arrow-left);
         background-size: 40%;
     }
@@ -1537,13 +1542,13 @@ main h2 {
 
     .apiLink-game {
         max-width: initial;
-        margin: 20rem auto 0 auto;
+        margin: 1.25rem auto 0 auto;
     }
 
     .game-screenshots-flex.open {
         display: block;
         height: auto;
-        padding: 0 20rem;
+        padding: 0 1.25rem;
     }
 
     .game-screenshots-flex.closed {
@@ -1556,7 +1561,7 @@ main h2 {
 /* @media screen and (max-width: 1144px) { */
 @media screen and (max-width: 1161px) {
     :root {
-        --screenshot-heigth: 440rem;
+        --screenshot-heigth: 27.5rem;
     }
 
     .game-screenshots-content.closed {
@@ -1567,13 +1572,13 @@ main h2 {
         display: block;
         position: relative;
         width: 100%;
-        padding: 0 30rem;
+        padding: 0 1.875rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         background-color: var(--back-contrast);
-        border-radius: 10rem;
+        border-radius: .625rem;
         -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
@@ -1582,7 +1587,7 @@ main h2 {
     .game-screenshots-flex {
         display: block;
         height: auto;
-        padding: 0 20rem;
+        padding: 0 1.25rem;
     }
 }
 
@@ -1590,20 +1595,20 @@ main h2 {
 @media screen and (max-width: 850px) {
 
     :root {
-        --lateral-width: 40rem;
-        --screenshot-heigth: 200rem;
+        --lateral-width: 2.5rem;
+        --screenshot-heigth: 12.5rem;
     }
 
     .header {
         background-image: var(--auth-logo);
         background-repeat: no-repeat;
-        background-position: calc(100vw - 115rem) -50rem;
+        background-position: calc(100vw - 7.1875rem) -3.125rem;
         background-size: 16%;
     }
 
     .header-btn-theme {
-        height: 40rem;
-        width: 40rem;
+        height: 2.5rem;
+        width: 2.5rem;
         background-size: 50%;
     }
 
@@ -1626,7 +1631,7 @@ main h2 {
     }
 
     .home-best-games {
-        min-width: 350rem;
+        min-width: 21.875rem;
     }
 
     .mobile-menu-container {
@@ -1640,23 +1645,23 @@ main h2 {
     }
 
     .game {
-        min-width: 350rem;
+        min-width: 21.875rem;
     }
 
     .game-metascore {
-        top: 20rem;
+        top: 1.25rem;
         left: auto;
-        right: 20rem;
+        right: 1.25rem;
     }
 
     .description-title {
         top: calc(((100vh - var(--header-heigth)) * 0.8) - 5%);
-        left: 60rem;
+        left: 3.75rem;
     }
 
 
     .game-screenshots-contentM {
-        padding: 0 15rem;
+        padding: 0 .9375rem;
     }
 
     .apiLink-games {
@@ -1673,7 +1678,7 @@ main h2 {
     }
 
     .main {
-        margin: calc(var(--header-heigth) + 20rem) var(--lateral-width) 0 var(--lateral-width);
+        margin: calc(var(--header-heigth) + 1.25rem) var(--lateral-width) 0 var(--lateral-width);
     }
 
     .main-mobile-search-container {
@@ -1689,9 +1694,9 @@ main h2 {
     }
 
     .cards {
-        border-radius: 10rem;
-        min-height: 200rem;
-        height: calc((100vh - var(--header-heigth) - 87rem) / 2);
+        border-radius: .625rem;
+        min-height: 12.5rem;
+        height: calc((100vh - var(--header-heigth) - 5.4375rem) / 2);
     }
 
     .card-1 {
@@ -1718,24 +1723,24 @@ main h2 {
 @media screen and (max-width: 450px) {
 
     :root {
-        --header-heigth: 60rem;
-        --lateral-width: 20rem;
+        --header-heigth: 3.75rem;
+        --lateral-width: 1.25rem;
     }
 
     /* Header */
 
     .header {
-        padding: 0 12rem;
-        background-position: calc(100vw - 95rem) -35rem;
+        padding: 0 .75rem;
+        background-position: calc(100vw - 5.9375rem) -2.1875rem;
         background-size: 30%;
     }
 
     .header-logo-name {
-        gap: calc((100vw / 2) - 147rem);
+        gap: calc((100vw / 2) - 9.1875rem);
     }
 
     .header-name {
-        width: 150rem;
+        width: 9.375rem;
         background-image: var(--name-site-mobile);
     }
 
@@ -1757,59 +1762,59 @@ main h2 {
     } */
 
     .games-grid {
-        grid-template-columns: repeat(auto-fill, 300rem);
+        grid-template-columns: repeat(auto-fill, 18.75rem);
     }
 
     .game {
-        min-width: 250rem;
+        min-width: 15.625rem;
     }
 
     .description-title {
         width: 80%;
-        top: calc(((100vh - var(--header-heigth)) * 0.8) - 110rem);
-        left: 30rem;
-        padding: 5rem 10rem;
-        backdrop-filter: blur(4rem);
+        top: calc(((100vh - var(--header-heigth)) * 0.8) - 6.875rem);
+        left: 1.875rem;
+        padding: .3125rem .625rem;
+        backdrop-filter: blur(.25rem);
         font-size: var(--font-ultra-large);
     }
 
     .game-description {
-        min-width: 200rem;
+        min-width: 12.5rem;
         width: 100%;
-        padding: 20rem 40rem 20rem 40rem;
+        padding: 1.25rem 2.5rem 1.25rem 2.5rem;
     }
 
     .description-features {
         height: auto;
         flex-wrap: wrap;
-        gap: 10rem;
+        gap: .625rem;
 
     }
 
     .description-category {
-        height: 30rem;
+        height: 1.875rem;
     }
 
     .description-platforms {
-        height: 25rem;
+        height: 1.5625rem;
         display: flex;
         align-items: center;
-        gap: 5rem;
+        gap: .3125rem;
     }
 
     .description-platform {
-        height: 25rem;
+        height: 1.5625rem;
         width: 100%;
     }
 
     .date-released {
         display: flex;
         align-items: center;
-        height: 30rem;
+        height: 1.875rem;
     }
 
     .game-screenshots-contentM {
-        padding: 0 5rem;
+        padding: 0 .3125rem;
     }
 
     .game-ss-contentM {
@@ -1818,7 +1823,7 @@ main h2 {
     }
 
     .list-items li {
-        padding: 15rem 20rem 15rem 20%;
+        padding: .9375rem 1.25rem .9375rem 20%;
         border-top: thin var(--back-contrast) solid;
     }
 
@@ -1827,12 +1832,12 @@ main h2 {
     }
 
     .result-card {
-        padding: 10rem 20rem;
+        padding: .625rem 1.25rem;
     }
 
     .result-img {
-        height: 80rem;
-        width: 90rem;
+        height: 5rem;
+        width: 5.625rem;
     }
 }
 
