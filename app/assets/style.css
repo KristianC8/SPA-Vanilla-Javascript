@@ -614,7 +614,7 @@ main h2 {
     display: none;
     justify-content: center;
     background-color: var(--back-contrast-transparent);
-    transition: 2s ease;
+    transition: 1.8s ease;
     z-index: 2;
 }
 
@@ -645,22 +645,6 @@ main h2 {
 .btn-mobile-menu {
     visibility: hidden;
     position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    background-image: var(--mobileMenu);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 80%;
-    background-color: var(--back-principal);
-    border: none;
-    border-radius: .75rem;
-    cursor: pointer;
-}
-
-.btn-mobile-animation {
-    visibility: hidden;
-    position: fixed;
     height: 3rem;
     width: 3rem;
     z-index: 2;
@@ -673,7 +657,9 @@ main h2 {
     background-position: center;
     background-size: 80%;
     background-color: var(--back-principal);
+
 }
+
 
 /* /////////////////////// Games ///////////////////////*/
 
@@ -1682,12 +1668,6 @@ main h2 {
     }
 
     .btn-mobile-menu {
-        visibility: visible;
-        animation: fadeIn 1s both;
-        -webkit-animation: fadeIn 1s both;
-    }
-
-    .btn-mobile-animation {
         visibility: visible;
         animation: fadeIn 1s both;
         -webkit-animation: fadeIn 1s both;
