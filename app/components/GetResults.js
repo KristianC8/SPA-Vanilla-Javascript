@@ -39,7 +39,7 @@ export function GetResults() {
                 <a class="result-link" href="#/${result.slug}">
                 <div class="result-card">
                     <img src="${result.background_image}" alt="${result.name}" class="result-img" />
-                    <h3>${result.name}</h3>
+                    ${result.name}
                 </div>
                 </a>
                 `

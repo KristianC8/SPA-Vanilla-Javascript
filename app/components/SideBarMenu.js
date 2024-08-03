@@ -4,14 +4,13 @@ export function SideBarMenu() {
     <nav class="menu">
     <button class ="menu-btn"></button>
     <a class="option-menu" href="#/">
-    <div class="option-menu-img menu-img-home"></div><span class="option-menu-text">Home</span>
+    <div class="option-menu-img menu-img-home"></div>Home
     </a>
      <a class="option-menu" href="#/Games">
-    <div class="option-menu-img menu-img-games"></div><span class="option-menu-text">Games</span>
+    <div class="option-menu-img menu-img-games"></div>Games
     </a>
      <a class="option-menu" href="#/Platforms">
-    <div class="option-menu-img menu-img-platforms"></div><span class="option-menu-text">Platforms</span>
-    </a>
+    <div class="option-menu-img menu-img-platforms"></div>Platforms
     </nav>
     `
     $sideBarMenu.classList.add('sidebar-menu')
