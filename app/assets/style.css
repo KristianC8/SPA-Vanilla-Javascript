@@ -644,7 +644,7 @@ main h2 {
 
 .btn-mobile-menu {
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     height: 3rem;
     width: 3rem;
     z-index: 2;
