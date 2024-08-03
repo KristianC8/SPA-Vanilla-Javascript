@@ -83,12 +83,17 @@ export function MobileMenu() {
 
 export function BtnMobileMenu() {
     const $btnMobileMenu = document.createElement('button')
+    const $btnMobileAnimation = document.createElement('div')
     const $MobileMenu = document.querySelector('.mobile-menu-container')
 
     $btnMobileMenu.classList.add('btn-mobile-menu')
-    $btnMobileMenu.classList.add('rubberBand')
+    $btnMobileAnimation.classList.add('btn-mobile-animation')
+
+    $btnMobileAnimation.appendChild($btnMobileMenu)
+
+    $btnMobileAnimation.classList.add('rubberBand')
     setTimeout(function () {
-        $btnMobileMenu.classList.remove('rubberBand');
+        $btnMobileAnimation.classList.remove('rubberBand');
     }, 600);
 
 
@@ -96,9 +101,9 @@ export function BtnMobileMenu() {
     document.addEventListener('click', e => {
         if (e.target === $btnMobileMenu || $btnMobileMenu.contains(e.target)) {
 
-            $btnMobileMenu.classList.add('rubberBand')
+            $btnMobileAnimation.classList.add('rubberBand')
             setTimeout(function () {
-                $btnMobileMenu.classList.remove('rubberBand');
+                $btnMobileAnimation.classList.remove('rubberBand');
             }, 600);
 
             const closeWithNav = `circle(.0625rem at calc(100vw - 2.125rem) calc(${window.innerHeight}px - 2.125rem))`,
@@ -128,5 +133,5 @@ export function BtnMobileMenu() {
     })
 
 
-    return $btnMobileMenu
+    return $btnMobileAnimation
 }

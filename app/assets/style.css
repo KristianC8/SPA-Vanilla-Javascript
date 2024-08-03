@@ -23,6 +23,7 @@
     --back-dark-transparent: rgb(200, 200, 200, .5);
     --font-clear-ever: #e7e7e7;
     --font-title-game: #a8a8a8;
+    --font-mobile-menu: #131313;
     --back-error: #dc3545;
     --font: #131313;
     --font-contrary: #e7e7e7;
@@ -90,6 +91,7 @@
     --font: #888888;
     --font-contrary: #131313;
     --font-clear-ever: #888888;
+    --font-mobile-menu: #e7e7e7;
     --back-error: #dc3545;
     --excellent: #003405;
     --excellent-tranparent: rgb(92, 255, 80, .8);
@@ -294,9 +296,9 @@ body {
     transition: .2s ease;
 }
 
-.header-btn-theme:hover {
+/* .header-btn-theme:hover {
     background-color: var(--back-contrast);
-}
+} */
 
 /* /////////////////////// Side Menu ///////////////////////*/
 
@@ -612,7 +614,7 @@ main h2 {
     display: none;
     justify-content: center;
     background-color: var(--back-contrast-transparent);
-    transition: .8s ease;
+    transition: 2s ease;
     z-index: 2;
 }
 
@@ -628,7 +630,7 @@ main h2 {
     margin-bottom: .3125rem;
     padding: 0 .625rem;
     border-radius: .5rem;
-    color: var(--font);
+    color: var(--font-mobile-menu);
     text-decoration: none;
     font-weight: 900;
     font-size: 1.25rem;
@@ -642,14 +644,30 @@ main h2 {
 
 .btn-mobile-menu {
     visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-image: var(--mobileMenu);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    background-color: var(--back-principal);
+    border: none;
+    border-radius: .75rem;
+    cursor: pointer;
+}
+
+.btn-mobile-animation {
+    visibility: hidden;
     position: fixed;
     height: 3rem;
     width: 3rem;
     z-index: 2;
     bottom: .625rem;
     right: .625rem;
-    border-radius: .75rem;
     border: solid .125rem var(--back-contrast);
+    border-radius: .75rem;
     background-image: var(--mobileMenu);
     background-repeat: no-repeat;
     background-position: center;
@@ -1664,6 +1682,12 @@ main h2 {
     }
 
     .btn-mobile-menu {
+        visibility: visible;
+        animation: fadeIn 1s both;
+        -webkit-animation: fadeIn 1s both;
+    }
+
+    .btn-mobile-animation {
         visibility: visible;
         animation: fadeIn 1s both;
         -webkit-animation: fadeIn 1s both;
