@@ -13,8 +13,12 @@ export function Home() {
         <section class="home-trailers">
             <h2>FEATURED TRAILERS</h2>
             <div class="home-trailers-content">
-            <iframe class="trailer" width="75%" height="40%" src="https://www.youtube.com/embed/nq1M_Wc4FIc?si=P01EAukpS78PcfrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe class="trailer" width="75%" height="40%" src="https://www.youtube.com/embed/FYH9n37B7Yw?si=WFSim6PMcP3p3PQ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="trailer">
+            <lite-youtube class="trailer-yt" videoid="nq1M_Wc4FIc"></lite-youtube>
+            </div>
+            <div class="trailer">
+            <lite-youtube class="trailer-yt" videoid="FYH9n37B7Yw"></lite-youtube>
+            </div>
             </div>
         </section>
     </section>

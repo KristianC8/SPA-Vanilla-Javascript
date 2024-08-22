@@ -135,7 +135,7 @@ html {
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     /* font-size: var(--font-medium); */
     font-family: 'Orbitron', sans-serif;
     transition: background-color var(--transition), box-shadow var(--transition);
@@ -588,6 +588,8 @@ main h2 {
 
 .home-trailers-content {
     display: flex;
+    gap: 0;
+    padding: 0;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -599,6 +601,11 @@ main h2 {
 
 .trailer {
     border-radius: .625rem;
+    width: 80%;
+}
+
+.trailer-yt {
+    border-radius: 0.627rem;
 }
 
 /* /////////////////////// Mobile Menu ///////////////////////*/
@@ -1478,6 +1485,9 @@ main h2 {
         background-size: 70%;
     }
 
+    .trailer {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 1206px) {
@@ -1582,6 +1592,7 @@ main h2 {
     .game-screenshots-flex.closed {
         display: flex;
     }
+
 }
 
 
@@ -1693,10 +1704,21 @@ main h2 {
         padding: 0 .9375rem;
     }
 
+    .game-screenshots-contentM.closed {
+        padding: 0;
+    }
+
     .apiLink-games {
         width: 80%;
     }
 
+}
+
+@media screen and (max-width: 1061px) {
+    .home-trailers-content {
+        gap: 1.25rem;
+        padding: 1.25rem 0 1.25rem 0;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -1843,6 +1865,10 @@ main h2 {
     }
 
     .game-screenshots-contentM {
+        padding: 0 .3125rem;
+    }
+
+    .game-screenshots-contentM.closed {
         padding: 0 .3125rem;
     }
 
