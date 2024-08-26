@@ -2,6 +2,10 @@ import { Loader } from "./Loader.js"
 import { ApiLinkForHome } from "./ApiLink.js"
 
 export function Home() {
+
+    const PS_TRAILERS = ['Wl05yGSDpxY', 'nq1M_Wc4FIc', 'EZr1HXkEahs']
+    const XB_TRAILERS = ['7jyei8habwk', 'bZ8ztTylrqw', 'knhUkKioASo']
+
     return ` 
     <section class="home-games">
         <section class="home-best-games">
@@ -14,10 +18,10 @@ export function Home() {
             <h2>FEATURED TRAILERS</h2>
             <div class="home-trailers-content">
             <div class="trailer">
-            <lite-youtube class="trailer-yt" videoid="nq1M_Wc4FIc"></lite-youtube>
+            <lite-youtube class="trailer-yt" videoid=${PS_TRAILERS[Math.floor(Math.random() * 3)]}></lite-youtube>
             </div>
             <div class="trailer">
-            <lite-youtube class="trailer-yt" videoid="FYH9n37B7Yw"></lite-youtube>
+            <lite-youtube class="trailer-yt" videoid=${XB_TRAILERS[Math.floor(Math.random() * 3)]}></lite-youtube>
             </div>
             </div>
         </section>

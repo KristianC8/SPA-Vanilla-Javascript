@@ -863,6 +863,7 @@ main h2 {
     font-size: var(--font-extra-large);
     font-weight: 900;
     border: .375rem solid;
+    z-index: 1;
 }
 
 .game-metacritic {
