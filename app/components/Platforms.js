@@ -1,10 +1,7 @@
-import platform_img from "../helpers/platform_img.js"
-import platforms_info from "../helpers/platforms_info.js"
+import platform_img from '../helpers/platform_img.js'
+import platforms_info from '../helpers/platforms_info.js'
 
 export function Platforms() {
-
-
-
   // const plataforms = [{
   //   name: 'pc',
   //   // src_Image: actualTheme === 'dark' ? platform_img.pcForDark : platform_img.pc,
@@ -53,7 +50,6 @@ export function Platforms() {
   const $footer = document.querySelector('.footer')
   let $platforms = ''
   let renderPlatforms = (theme) => {
-
     if (theme === 'dark') {
       for (let platform of platforms_info.plataforms) {
         $platforms += `
