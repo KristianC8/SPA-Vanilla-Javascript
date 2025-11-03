@@ -412,12 +412,13 @@ body {
 
 .main {
   margin: var(--header-heigth) var(--lateral-width) 0 var(--lateral-width);
-  transition: 0.4s ease;
+  transition: none;
   max-width: none;
 }
 
 .main-open-menu {
   margin: var(--header-heigth) 0 0 10.3125rem;
+  transition: 0.4s ease;
   max-width: calc(100% - 175px);
 }
 
