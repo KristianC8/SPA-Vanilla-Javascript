@@ -413,10 +413,12 @@ body {
 .main {
   margin: var(--header-heigth) var(--lateral-width) 0 var(--lateral-width);
   transition: 0.4s ease;
+  max-width: none;
 }
 
 .main-open-menu {
   margin: var(--header-heigth) 0 0 10.3125rem;
+  max-width: calc(100% - 175px);
 }
 
 .main-mobile-search-container {
@@ -842,7 +844,6 @@ main h2 {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.9375rem;
   min-width: 15.625rem;
   padding: 1.25rem 0;
   /* min-height: calc(100vh - var(--header-heigth)); */
@@ -1504,6 +1505,11 @@ main h2 {
 }
 
 @media screen and (max-width: 1206px) {
+
+  .game-view {  
+    gap: 0.9375rem;
+  }
+
   .game-screenshots-content.open {
     display: none;
   }
