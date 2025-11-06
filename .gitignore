@@ -3,3 +3,5 @@ api_key.js
 .env
 # Local Netlify folder
 .netlify
+
+node_modules
